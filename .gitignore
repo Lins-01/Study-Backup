@@ -19,6 +19,7 @@
 !*.tex
 !*.ipynb
 !.gitignore
+!*.json
 
 
 # 忽略特定文件夹 
