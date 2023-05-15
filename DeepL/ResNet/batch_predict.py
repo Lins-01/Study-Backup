@@ -53,6 +53,7 @@ def main():
 
             # batch img
             # 将img_list列表中的所有图像打包成一个batch
+            # torch.stack()函数将一个列表中的所有tensor在指定维度上打包成一个tensor
             batch_img = torch.stack(img_list, dim=0)
             # predict class
             output = model(batch_img.to(device)).cpu()
