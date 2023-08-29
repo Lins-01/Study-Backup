@@ -2,7 +2,7 @@ print('hello world!')
 #input()输入的返回值是字符串，要用数字的话，需要强转
 
 # #懒得每次输入，先注释了
-# x1=input("请输入第一个数：")
+x1=input("请输入第一个数：")
 # x2=input("请输入第二个数：")
 # res=int(x1)*int(x2)
 # print(x1,'x',x2,"=",res)
@@ -179,3 +179,6 @@ a = 'abc'
 b=a.replace('a','A')
 #a没变，另复制个字符串到b
 print('a=',a,'  b=',b)
+
+
+print('*'*20)

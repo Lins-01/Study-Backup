@@ -1,4 +1,5 @@
 # 使用torch.nn包来构建神经网络.
+import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
@@ -75,7 +76,6 @@ class LeNet(nn.Module):  # 继承于nn.Module这个父类
         # 一般分类问题最后一层都是用softmax函数的
         # 但这里因为在交叉熵函数中已经包含了一个高效的softmax函数
         return x
-
 
 
 
