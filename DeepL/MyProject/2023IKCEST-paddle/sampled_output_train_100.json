@@ -1,0 +1,2118 @@
+[
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "北京市疾控中心8日发布封控区管控区和防范区内人员防疫指引要求封控区足不出户",
+            "caption": [
+                "",
+                "",
+                "北京新增本土感染者39例，朝阳提级管控措施_新农村融媒网",
+                "刚刚，北京通报：首都与疫情的较量正处于胶着状态_南郎社区_人员_封控",
+                "发布会汇总｜北京新增本土感染者39例，朝阳提级管控措施_北京昨日新增本土44+18_北京24小时新增本土感染者39例_北京24小时新增本土感染者38例",
+                "北京本土感染者+39！朝阳区管控提级，生活、工作涉朝阳区人员全部居家办公_北京朝阳管控提级：这些人居家办公_采样_封控区",
+                "发布会汇总｜北京新增本土感染者39例，朝阳提级管控措施|朝阳区|北京市|疫情_新浪新闻",
+                "发布会汇总｜北京新增本土感染者39例，朝阳提级管控措施_腾讯新闻",
+                "北京疾控发布封控区、管控区和防控区人员防疫指引-中国科技网"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "据微博管理员 个人主页展示评论功能上线后",
+            "caption": [
+                "",
+                "【820-822】微博又出新功能，以后你在微博的任何评论都全国人民可见了 - 知乎",
+                "【820-822】微博又出新功能，以后你在微博的任何评论都全国人民可见了",
+                "「惡意刷量控評」涉「尋釁滋事」　近16萬微博用戶被處罰 — RFA 自由亞洲電台粵語部",
+                "「惡意刷量控評」涉「尋釁滋事」　近16萬微博用戶被處罰",
+                "IP属地曝光，你怕了吗？ - 知乎",
+                "这七类违规类型，微博严打！_相关",
+                "BB鸭 | 微博个人主页显示历史评论；共享充电宝涨价至4元/小时；三星Galaxy国行新品发布；苹果员工要求线下办公_工作_鸭鸭_Galaxy",
+                "微博将上线个人主页展示评论功能，无法关闭 - 知乎",
+                "微博将上线个人页展示评论功能_测试_用户_账号",
+                "微博：将上线个人主页展示评论功能，无法自主开启或关闭_用户_内容_原博文",
+                "「惡意刷量控評」涉「尋釁滋事」　近16萬微博用戶被處罰 — RFA 自由亞洲電台粵語部",
+                "微博将上线个人主页展示评论功能，无法关闭_用户_内容_原博文",
+                "",
+                "进一步防网暴，微博将上线个人主页展示评论功能 | 潇湘晨报网",
+                "微博：将上线个人主页展示评论功能，无法自主开启或关闭_用户_内容_原博文",
+                "进一步防网暴，微博将上线个人主页展示评论功能_用户_内容_测试",
+                "进一步防网暴，微博将上线个人主页展示评论功能|微博_新浪财经_新浪网",
+                "微博将上线个人主页展示评论功能，无法关闭 - 知乎",
+                "微博将上线个人主页显示公开评论功能，用户无法关闭|微博_新浪财经_新浪网",
+                "个人主页展示公开评论！微博官宣上线新功能，用户无法主动开启或关闭 | 每日经济新闻",
+                "微博将上线个人主页展示评论功能，无法关闭_用户_内容_原博文",
+                "11 家网约车平台被约谈；微博个人主页将展示历史评论；华为 Mate5 将于 9 月 6 日发布 | 极客公园",
+                "微博将上线个人主页展示评论功能 近期对部分用户进行小范围测试_原博文_内容_评论"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "40是单亲妈妈发达国家比例高主要是hei人吧 ",
+            "caption": [
+                "",
+                "",
+                "忽而今夏（2018年白宇、卜冠今主演电视剧）_百度百科",
+                "全球十大高福利国家中，谁最牛？ - 知乎",
+                "黑人是如何毁掉世界的？ - 知乎",
+                "美国华人聚集分布图：在美工作+居住，哪儿最好？ - 知乎"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "A year old video of Muslims burning a Pakistans flag from UP, is viral claimed as recent fromPOK.",
+            "caption": [
+                "",
+                "The Pak journalist, Hamid Mir lied yet again. Tweeted a year old video claiming as of 16th Aug. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "Was a video from the recent Pakistan plane crash shared on social media? - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "This video is not of the Uttar Pradesh border, it's an old video - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "Did a BTS fan play Dynamite song instead of Azaan in Jaunpur ? - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "A 3 year old video of Muslims burning a Pakistan's flag from UP, is viral claimed as recent from POK. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "",
+                "The Pak journalist, Hamid Mir lied yet again. Tweeted a year old video claiming as of 16th Aug. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "Last year's video from UK of a Sikh chanting slogans in favor of Pakistan is viral as from ongoing framers' protest. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "A 3 year old video of Muslims burning a Pakistan's flag from UP, is viral claimed as recent from POK. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "Last year's video from UK of a Sikh chanting slogans in favor of Pakistan is viral as from ongoing framers' protest. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "The Pak journalist, Hamid Mir lied yet again. Tweeted a year old video claiming as of 16th Aug. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "An old video of burning cable car from Palestine, is viral claimed as from Haridwar. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "A 3 year old video of Muslims burning a Pakistan's flag from UP, is viral claimed as recent from POK. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "An old video of burning cable car from Palestine, is viral claimed as from Haridwar. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain",
+                "In PAF lies & subterfuge, an F-16 tail number & a PAF pilot  —  both hidden to serve a myth",
+                "Last year's video from UK of a Sikh chanting slogans in favor of Pakistan is viral as from ongoing framers' protest. - SM Hoax Slayer Swachh Social Media Abhiyaan by Pankaj Jain"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "普通人的练好仪态的小功课",
+            "caption": [
+                "",
+                "Nữ thần thời trang công sở chính là Lưu Diệc Phi - Pinterest",
+                "Nữ thần thời trang công sở chính là Lưu Diệc Phi-Thời trang Lawyer Fashion, Office Fashion, 90s Fashion, Beautiful Asian Women, Luulla Dresses, Beauty Essence",
+                "Chalimatussadiyah (diahecha444) - Profile - Pinterest",
+                "Yang Saya Simpan",
+                "Lưu Diệc Phi xinh như nữ thần giữa thời hiện đại - Eva",
+                "Lưu Diệc Phi xinh như nữ thần giữa thời hiện đại - 1",
+                "LƯU DIỆC PHI được khen là nữ thần đồ công sở trong Tình Yêu Thứ Ba, LUU DIEC PHI",
+                "[2015] Tình yêu thứ 3 (Tự Do Hành Tẫu) - Lưu Diệc Phi, Song Seung Hun - nttrungmt-wiki",
+                "",
+                "普通人的练好仪态的小功课来自Qu大美啊- 微博",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "ICYMI Life in the DDR Berlin Alexanderplatz from the TV tower, Gjabu via http",
+            "caption": [
+                "",
+                "Восточный Берлин 1980 год: bolgarttx — LiveJournal",
+                "Восточный-Берлин 1980 год",
+                "Восточный Берлин 1980 год - gjabu - LiveJournal",
+                "Восточный-Берлин 1980 год",
+                "",
+                "The Legend of Zelda: Why Link Never Speaks | Den of Geek",
+                "The Legend of Zelda Link",
+                "TotK] This Might Be the Best Design Link Has Ever Had : r/zelda",
+                "r/zelda - [TotK] This Might Be the Best Design Link Has Ever Had",
+                "Steam Link on Steam"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "据中国地震台网 08月14日16时20分在青海玉树州杂多县北纬33.",
+            "caption": [
+                "",
+                "快訊／四川6.8強震！「深度超淺」僅16公里 「強烈搖晃」畫面曝光",
+                "四川發生地震。（圖／翻攝自微博）",
+                "快訊／四川6.8強震！「深度超淺」僅16公里 「強烈搖晃」畫面曝光",
+                "四川發生地震。（圖／翻攝自微博）",
+                "快訊／四川6.8強震！「深度超淺」僅16公里 「強烈搖晃」畫面曝光",
+                "四川發生地震。（圖／翻攝自微博）",
+                "2022四川地震最新消息（持续更新）- 成都本地宝",
+                "四川阿坝州理县发生4.5级地震，震源深度13千米_成都",
+                "Sina Visitor System",
+                "四川阿坝州马尔康市发生5.2级地震 震源深度15千米_四川阿坝5.8级地震 成都震感强烈_四川阿坝20分钟内连发4次地震_四川5.8级地震现场：市民下楼避险",
+                "四川阿坝州马尔康市发生4.4级地震 震源深度11千米",
+                "",
+                "青海玉树州杂多县发生5.9级地震  当地消防已集结前往",
+                "青海玉树连发多次地震",
+                "刚刚！青海玉树州杂多县发生5.9级地震 震源深度10千米",
+                "青海玉树州杂多县发生5.9级地震-中国科技网",
+                "青海玉树连发2次地震",
+                "青海玉树州杂多县连发4次地震，其中一次5.9级__财经头条"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "念心思阳可恶和唐山的 地痞流氓有区别吗 ",
+            "caption": [
+                "",
+                "Just a moment...",
+                "细数最近温哥华华人骗局，真是鸟大了什么林子都有。。。 | 自由微信 | FreeWeChat",
+                "",
+                "Python_NLP_NLTK_Research/as_training_words.txt at master ...",
+                "MH Weekly 2003-5-11"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "怪不得大家都说动物园里没有真熊猫都是人扮的",
+            "caption": [
+                "",
+                "",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "美国太空军高级将领尸体尸体在五角大楼停车场被发现原因不明 据外媒报道在3月15日美国五角大楼发言人太空军准将帕特里克的尸体在五角大楼停车场被发现在",
+            "caption": [
+                "",
+                "Pentagon asserts US wants to be India's 'premier partner' in its remarkable growth story | DETAILS - Bharat Times English News",
+                " Pentagon Press Secretary Brigadier General Patrick Ryder",
+                "Pentagon Press Secretary Brigadier General Patrick Ryder",
+                "World needs Canada and the United States working together, says ...",
+                "US doesn't seek escalation with Iran, Pentagon says",
+                "US: New Pentagon spokesperson Pat Ryder holds first briefing as IAEA mission heads to ZNPP | US News",
+                "US: New Pentagon spokesperson Pat Ryder holds first briefing as IAEA mission heads to ZNPP",
+                "English News: Latest News, Breaking News, Live Updates - IndiaTV News",
+                "Just a moment...",
+                "",
+                "美国太空军高级将领尸体尸体在五角大楼停车... 来自军武季- 微博",
+                "Sina Visitor System",
+                "美国太空军高级将领尸体尸体在五角大楼停车... 来自军武季- 微博",
+                "《侨报》中国新闻 by usqiaobao china - Issuu",
+                "Sina Visitor System"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "换驾驶证发现自己是色弱求助",
+            "caption": [
+                "",
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "体检色弱能换驾驶证吗 – 驾速速学车"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Novo Nordisk says it will lower the U.",
+            "caption": [
+                "",
+                "Sanofi becomes latest drugmaker to announce insulin price cuts, capping cost at $35 for the privately insured | CNN",
+                "Kerem Yucel/AFP/Getty Images",
+                "Travis Paulson looks at NovoRapid (Canada) and NovoLog (US), a replacement insulin drug at his house on January 16, 2020 in Eveleth, Minnesota. - It's the wealthiest country on the planet but the sometimes staggering cost of health care means that Americans in need of everyday items such as insulin to treat diabetes resort to the black market or pharmacies across the border to source cheaper drugs. (Photo by Kerem Yucel / AFP) (Photo by KEREM YUCEL/AFP via Getty Images)",
+                "Insulin's high cost goes beyond drugmakers to industry's price mediators | CNN",
+                "Health News - CNN",
+                "Insulin's high cost goes beyond drugmakers to industry's price mediators - The World Business News",
+                "",
+                "Novo Nordisk Will Lower Insulin Prices Up To 75%, Following Eli Lilly",
+                "Robert Hart",
+                "Novo Nordisk to slash U.S. insulin prices by up to 75% after Eli Lilly"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "happiest birthday!! ",
+            "caption": [
+                "",
+                "",
+                "200+ Best Happy Birthday Wishes for Your Family, Friends & Colleagues in 2023",
+                "happy birthday images many blessings 600x900",
+                "Dandelion Stationery - Cake Happiest Birthday Card #DWW796",
+                "Free and customizable birthday templates"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Decent photographs of in allover Executive Dark Grey seem few and far between this one at Euston, October David Chamberlain shows some excellent detail, including very bright buffer beams... ",
+            "caption": [
+                "",
+                "",
+                "2022 US Open Cup Qualifying: Game-by-game review of October qualifiers",
+                "Georgia Revolution FC Reserves celebrate after a 4-2 PK win over the Georgia Storm (after a 2-2 draw after extra time) in the Second Round of the 2022 US Open Cup qualifying tournament. Photo: Georgia Revolution",
+                "2022 US Open Cup Qualifying: Game-by-game review of October qualifiers",
+                "FC Maritsa player attempts to tackle the ball away from an IASC Boom player in a 2022 US Open Cup qualifying match in Rochester, NY. Photo: Mathieu Starke | @Starke_photo (all social media)",
+                "2022 US Open Cup Qualifying: Game-by-game review of October qualifiers",
+                "Georgia Revolution FC Reserves celebrate after a 4-2 PK win over the Georgia Storm (after a 2-2 draw after extra time) in the Second Round of the 2022 US Open Cup qualifying tournament. Photo: Georgia Revolution"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "6月21日024时31个省自治区直辖市和新疆生产建设兵团报告新增确诊病例31例",
+            "caption": [
+                "",
+                "",
+                "全国疫情最新消息| 6月21日新增本土确诊10例、本土无症状12例-中华网河南",
+                "全国疫情最新消息",
+                "全国疫情最新消息| 6月21日新增本土确诊10例、本土无症状12例-中华网河南",
+                "全国疫情最新消息",
+                "6月21日全国本土新增10+12例_财新网_财新网",
+                "国家卫健委：2月21日新增新冠肺炎确诊病例138例 其中本土病例59例-新华网",
+                "【#4月22日新增2971例本土确诊# ... - @人民网 的微博精选 - 微博新加坡站",
+                "疫情午报｜6省份本土增10+12，京沪趋势一图速览|新冠肺炎_新浪新闻",
+                "【境内疫情观察】北京新增22例本土病例（6月20日）_财新数据通频道_财新网",
+                "健康提示|今日无新增排查地区和交通工具（2022年6月22日16时）_检测_隔离_人员",
+                "昨日（6月21日），广西无新增本土确诊病例；全国“10+12”→_自治区_感染 ..."
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "唐山被打女生去世 ",
+            "caption": [
+                "",
+                "Robot or human?",
+                "Robot or human?",
+                "Robot or human?",
+                "Robot or human?",
+                "China Tiananmen Square car blaze kills five people - BBC News",
+                "",
+                "网传唐山被打的女孩子去世了... : r/DoubanGoosegroup",
+                "r/DoubanGoosegroup - 网传唐山被打的女孩子去世了...",
+                "网传烧烤店被打女子已死亡，唐山市妇联：两位住院女性生命体征平稳_新闻频道_央视网(cctv.com)",
+                "natsuki on Twitter: \"唐山被打女孩已经去世替身演员来自唐山艺校https ...",
+                "证明“被打的人没死，施暴的人被捕”，是唐山警方应有之义…… - 知乎",
+                "微博被撤热搜：唐山烧烤店被打女孩死亡: r/China_irl"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "饭店服务员妹妹暴打两流氓好牛 ",
+            "caption": [
+                "",
+                "Garson kadının kendisine saldıran iki erkek müşteriyi dövdüğü iddiası - Doğrula",
+                "ببینید| عزرائیل در این صحنه مرگبار کم آورد - خبر نیوز - KhabarNews",
+                "",
+                "以假换真茅台酒被调包 北京公交警方6小时破案 - 知乎",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "朋友包场了电影院请我们看灌篮高手 太震撼了",
+            "caption": [
+                "",
+                "",
+                "晚安十点（2023.4.20）丨凌晨刷屏朋友圈！熟悉的BGM响起，是谁泪目了}",
+                "晚安十点（2023.4.20）丨凌晨刷屏朋友圈！熟悉的BGM响起，是谁泪目了}",
+                "预售破亿！20年前的《灌篮高手》凭啥那么多人买账？ | Redian新闻",
+                "揭秘《灌篮高手》吸金大法：小手办月入近百万、周边卖断货_手机新浪网"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "现在欧洲领导人正在预订飞往北京的航班",
+            "caption": [
+                "",
+                "",
+                "人大重阳网 为什么近期欧洲领导人“纷纷预定飞往北京的航班”？",
+                "image.png",
+                "解局丨为什么近期欧洲领导人“纷纷预定飞往北京的航班”？_手机新浪网",
+                "为什么近期欧洲领导人“纷纷预定飞往北京的航班”？_中国_危机_西班牙",
+                "G20大阪峰会_环球网",
+                "解局丨为什么近期欧洲领导人“纷纷预定飞往北京的航班”？|欧洲领导人|欧洲|北京市_新浪新闻",
+                "女子杀夫案聊天记录曝光"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "daisy jones the six energy",
+            "caption": [
+                "",
+                "Reddit - Dive into anything",
+                "Reddit - Dive into anything",
+                "Reddit - Dive into anything",
+                "",
+                "Riley Keough Taps Into Lisa Marie, Elvis Presley's Energy For 'Daisy Jones and The Six' Series [WATCH] | Music Times",
+                "(Photo : Gareth Cattermole/Getty Images)",
+                "Riley Keough Taps Into Lisa Marie, Elvis Presley's Energy For 'Daisy Jones and The Six' Series [WATCH]",
+                "Daisy Jones and the Six Digital Download Bookmark Made to Look - Etsy",
+                "Daisy Jones and The Six Digital Download Bookmark made to look like a concert ticket, Inspired by the book Daisy Jones and The Six",
+                "Amazon's 'Daisy Jones & The Six' Storefront Has Retro Fashion Finds",
+                "Daisy Jones & the Six Amazon Storefront Tout",
+                "How To Channel Main Character Energy Like ‘Daisy Jones & The Six’ | Thought Catalog",
+                "Daisy Jones and The Six, Where the Crawdads Sing, Girl Woman Other ..."
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "A juror was dismissed in Kyle Rittenhouse's trial after making a joke to a deputy about Jacob Blake,",
+            "caption": [
+                "",
+                "Kyle Rittenhouse trial: Armed paramedic who was shot testifies he thought teen was an active shooter | CNN",
+                "Sean Krajacic/Kenosha News/Pool/Getty Images",
+                "Kyle Rittenhouse listens as his lawyer gives opening statements to the jury at the Kenosha County Courthouse in Kenosha, Wis, on Nov. 2, 2021.  ",
+                "These are the charges Kyle Rittenhouse faces in Kenosha shooting | PBS NewsHour",
+                "Kyle Rittenhouse trial begins: Key takeaways from Day 1 - ABC News",
+                "Kyle Rittenhouse trial: Witness says first shooting victim acted 'belligerently' | CNN",
+                "Kyle Rittenhouse trial: Juror dismissed for telling joke about police shooting of Jacob Blake | CNN",
+                "",
+                "Juror in Kyle Rittenhouse trial dismissed for making joke about Jacob Blake : NPR",
+                "Kyle Rittenhouse waits for his legal team at the Kenosha County Courthouse in Kenosha, Wis., on Thursday.",
+                "Rittenhouse juror dismissed after joke about Jacob Blake shooting | PBS NewsHour",
+                "First day of jury selection for Kyle Rittenhouse trial in Kenosha",
+                "Juror in Kyle Rittenhouse trial dismissed for telling joke about ..."
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "害怕生孩子是心理障碍吗 疼就是疼怕就是怕怕疼不用觉得羞耻",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "害怕生孩子是心理障碍吗# 疼就是疼，怕就... 来自医学手札- 微博",
+                "肩关节——肩峰撞击综合征 - 知乎",
+                "第一批“00后”已到生育年龄，年轻人的婚育观吓坏父母，你支持吗 - 知乎",
+                "转发微博转发@医学手札：#害怕生孩子是... 来自想冬眠的十万- 微博",
+                "脸为什么会这么疼？三叉神经又是啥？ - 知乎"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "某人突然发颠拉我下楼刮彩票 然后",
+            "caption": [
+                "",
+                "",
+                "【球探报告】马尔科·拉泽蒂奇，米兰彩票越刮越上瘾 - 知乎",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "【球探报告】马尔科·拉泽蒂奇，米兰彩票越刮越上瘾 - 知乎",
+                "拉泽蒂奇有着出色的第一触球和瞬间的射门得分能力"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "路透社当地时间4月3日援引俄新社消息称俄罗斯外交部副部长格鲁什科表示",
+            "caption": [
+                "",
+                "Russia says it will beef up military in northwest as Finland joins NATO - RIA | Reuters",
+                "Russia's Deputy Foreign Minister Alexander Grushko gives a news conference after a meeting at NATO headquarters between Russian ministers and alliance diplomats, at the Russian embassy, in Brussels, Belgium January 12, 2022. REUTERS/Yves Herman",
+                "Russia's Deputy Foreign Minister Alexander Grushko holds a news conference in Brussels",
+                "NATO-Russia communication lines remain open - Russian official | Reuters",
+                "Russia's Deputy Foreign Minister Alexander Grushko gives a news conference after a meeting at NATO headquarters between Russian ministers and alliance diplomats, at the Russian embassy, in Brussels, Belgium January 12, 2022. REUTERS/Yves Herman",
+                "Russia's Deputy Foreign Minister Alexander Grushko holds a news conference in Brussels",
+                "Moscow will respond if NATO moves nuclear forces closer to Russia's border | Reuters",
+                "Russia's Deputy Foreign Minister Alexander Grushko gives a news conference after a meeting at NATO headquarters between Russian ministers and alliance diplomats, at the Russian embassy, in Brussels, Belgium January 12, 2022. REUTERS/Yves Herman",
+                "Russia's Deputy Foreign Minister Alexander Grushko holds a news conference in Brussels",
+                "Russia says it wants to keep diplomatic ties with West despite expulsions | Reuters",
+                "Russia's Deputy Foreign Minister Alexander Grushko gives a news conference after a meeting at NATO headquarters between Russian ministers and alliance diplomats, at the Russian embassy, in Brussels, Belgium January 12, 2022. REUTERS/Yves Herman",
+                "Russia's Deputy Foreign Minister Alexander Grushko holds a news conference in Brussels",
+                "Russia says it will beef up military in northwest as Finland joins NATO - RIA",
+                "Russia's Deputy Foreign Minister Alexander Grushko holds a news conference in Brussels",
+                "",
+                "外媒：俄副外长称，俄将加强西北部军事力量以回应芬兰加入北约_俄罗斯外交部_瑞典_格鲁什科",
+                "外媒：俄副外长称，俄将加强西北部军事力量以回应芬兰加入北约-新华网",
+                "外媒：俄副外长称，俄将加强西北部军事力量以回应芬兰加入北约_俄罗斯 ...",
+                "芬兰“入约”，俄方公布应对措施_北约_格鲁什科_俄罗斯",
+                "芬兰“入约”，俄方公布应对措施_新华报业网"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "a scribble of Damien all dressed up for some formal occasion. lookin sharp!",
+            "caption": [
+                "",
+                "Userpage of MegaCowtroll -- Fur Affinity [dot] net",
+                "damienのTwitterイラスト検索結果。",
+                "IceMuseFriendさんのイラストまとめ",
+                "",
+                "Country & Town House - July/August 2021 by Country & Town House Magazine - Issuu",
+                "Celebrity buzz gallery",
+                "20TH CENTURY AND CONTEMPORARY ART EVENING SALE [catalogue] by PHILLIPS - Issuu",
+                "Celebrity buzz gallery",
+                "20TH CENTURY & CONTEMPORARY ART EVENING SALE [Catalogue] by PHILLIPS - Issuu"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "我注册了微博请大家多多关照",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "我注册了微博，请大家多多关照... 来自香港姐姐- 微博",
+                "红色系on Twitter: \"楚楚欢迎你来微博啦https://t.co/wths0TxhU6 ...",
+                "日本吸毒女星酒井法子，来中国在线乞讨？网友怒了",
+                "YORIYUKI on Twitter: \"我開始了微博〜！ https://t.co/TeG0O2YycS ..."
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Steve Bannon tells the January select committee he is now willing to testify,",
+            "caption": [
+                "",
+                "Steve Bannon faces state indictment in New York and expected to surrender Thursday | CNN Politics",
+                "CLYDE, OHIO - AUGUST 06: U.S. President Donald Trump speaks to workers at a Whirlpool manufacturing facility on August 06, 2020 in Clyde, Ohio. Whirlpool is the last remaining major appliance company headquartered in the United States. With more than 3,000 employees, the Clyde facility is one of the world's largest home washing machine plants, producing more than 20,000 machines a day. (Photo by Scott Olson/Getty Images)",
+                "Photos: Steve Bannon, Trumps former chief strategist | CNN Politics",
+                "Kevin Dietsch/Getty Images",
+                "Bannon arrives to a courthouse in Washington, DC, in June 2022. <a href=\"https://www.cnn.com/politics/live-news/steve-bannon-trial-contempt-congress-07-22-22/index.html\" target=\"_blank\">He was found guilty</a> of contempt of Congress charges for defying a subpoena seeking information about his role in efforts <a href=\"https://www.cnn.com/interactive/2022/07/politics/steve-bannon-us-democracy/\" target=\"_blank\">to undermine the 2020 election results.</a>",
+                "Steve Bannon says he's willing to testify before January 6 committee after Trump waives claims of executive privilege | CNN Politics",
+                "",
+                "Steve Bannon says he's willing to testify before January 6 committee after Trump waives claims of executive privilege | CNN Politics",
+                "Steve Bannon says he's willing to testify before January 6 committee after Trump waives claims of executive privilege | CNN Politics",
+                "Steve Bannon says he's willing to testify before January 6 committee after Trump waives claims of executive privilege | CNN Politics",
+                "Steve Bannon says he's willing to testify before January 6 committee after Trump waives claims of executive privilege | Law | wxow.com",
+                "Steve Bannon says he's willing to testify before January 6 committee after Trump waives claims of executive privilege"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Bitcoin maxis are a disease. Its time for bitcoiners to heal.",
+            "caption": [
+                "",
+                "",
+                "Bitcoiners are seething at Peter Zeihan's interview on Joe Rogan podcast",
+                "Bitcoiners are seething at Peter Zeihan’s interview on Joe Rogan podcast",
+                "Cover art/illustration via CryptoSlate",
+                "From Doge Soldiers to Bitcoinists: A Field Guide to the Crypto ...",
+                "Listen to 2-Bit Idiots podcast | Deezer",
+                "From Doge Soldiers to Bitcoinists: A Field Guide to the Crypto ..."
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "这组婚纱真的很绝",
+            "caption": [
+                "",
+                "Song Joong Ki and Song Hye Kyo’s individual turning points post-divorce  - KBIZoom",
+                "After 2 years of marriage, Song Joong Ki and Song Hye Kyo divorced and put and end to a “fairy tale” love story",
+                "Song Joong Ki - Song Hye Kyo",
+                "Song Joong Ki And Song Hye Kyo Release Gorgeous Wedding Photos | Soompi",
+                "",
+                "心动了❗这组森系婚纱照真的很绝🍃- 青沐影像高定摄影美学的作品【婚礼纪】",
+                "这组婚纱真的很绝来自AAA老杨在营业- 微博",
+                "【玺摄摄影】糟糕！心动了！这组森系婚纱照真的很绝- 玺摄婚纱摄影工作室的作品【婚礼纪】",
+                "322 美哭摄影师的三组室内婚纱照，第三套真的绝绝子#厦门婚纱照 #厦门婚纱摄影 #室内婚纱照 #光影婚纱照 #韩式婚纱照 - YouTube",
+                "【玺摄摄影】糟糕！心动了！这组森系婚纱照真的很绝- 玺摄婚纱摄影工作室的作品【婚礼纪】"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "当地时间7月5日北约组织秘书长斯托尔滕贝格与芬兰外长哈维斯托及瑞典外交大臣林德在北约总部布鲁塞尔正式签署了芬瑞两国加入北约组织议定书",
+            "caption": [
+                "",
+                "",
+                "30国驻北约大使已签署瑞典和芬兰加入北约协议 乌外长：短期内看不到加入北约的希望_芬兰瑞典正式签署加入北约议定书_国家_时间",
+                "芬兰瑞典一只脚踏入北约，土耳其会再阻拦吗？_芬兰瑞典正式签署加入北约议定书_美国国务院_俄罗斯",
+                "这两国正式签署加入北约组织议定书！_瑞典_芬兰_林德",
+                "瑞典和芬兰，正式签署加入北约组织议定书！ - YouTube",
+                "最新进展！瑞典和芬兰加入北约协议，30国签了_芬兰瑞典正式签署加入北约议定书_时间_马德里",
+                "芬兰瑞典一只脚踏入北约，土耳其会再阻拦吗？_芬兰瑞典正式签署加入北约议定书_美国国务院_俄罗斯",
+                "芬兰瑞典正式确认加入北约意愿_英国单方面修改北爱议定书激怒欧盟_哈维斯托_林德",
+                "最新！30国驻北约大使已签署瑞典和芬兰加入北约协议_芬兰瑞典正式签署加入北约议定书_时间_国家",
+                "芬兰瑞典一只脚踏入北约，土耳其会再阻拦吗？_芬兰瑞典正式签署加入北约议定书_美国国务院_俄罗斯",
+                "北约成员签署议定书，启动芬兰瑞典加入北约的批准程序",
+                "芬兰外长佩卡∙哈维斯托（左）和瑞典外交大臣安∙林德（右）与北约秘书长斯托尔滕贝格在布鲁塞尔北约总部举行的记者会后交谈。（2022年7月5日）"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "苦命姐妹改善生活",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "2023年4月14日国台办发言人朱凤莲答记者问",
+            "caption": [
+                "",
+                "",
+                "民进党当局炒作大陆航天活动“影响台北飞行情报区”国台办回应：歪曲事实、欺骗舆论_中华网",
+                "民进党当局炒作大陆航天活动“影响台北飞行情报区”国台办回应：歪曲事实、欺骗舆论",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "全年全天候強節奏音樂擾民鄰居除了勸還能怎么辦？ - YouTube"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "这种被长月包围的感觉真的太爽了",
+            "caption": [
+                "",
+                "apex小地图上一闪一闪的圈 - 抖音",
+                "#apex英雄 😳😳😳",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "小狗踩切尔西_小狗踩切尔西表情包_如果踩到了切尔西会怎么样 - 抖音",
+                "Sina Visitor System",
+                "",
+                "这种被长月包围的感觉真的太爽了[泪][泪][... 来自须臾青空- 微博",
+                "女人不穿bra竟然这么爽！秋冬这样穿，保暖又有型，立挺更百搭，有了它你的内衣可以扔了！ | Redian新闻",
+                "我和男朋友的爱情故事 - 知乎",
+                "夏天谁不想来一杯冰冰凉凉的气泡水呢？可以自制气泡水的气泡机，各种口味随心而变，这个夏天你的气泡机到位了吗？ - 知乎",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "李现 白敬亭 刘冲昨晚合影照",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "八零九零_百度百科",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "八零九零_百度百科"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "全国打击性侵犯罪专项行动推进会12日召开公安部强调",
+            "caption": [
+                "",
+                "",
+                "公安部部署推进打击性侵犯罪专项行动_中华网",
+                "公安部部署推进打击性侵犯罪专项行动",
+                "公安部：零容忍查处性侵犯罪，彻底摧毁网络交友类性侵犯罪网 - 知乎",
+                "公安部要求零容忍查处性侵犯罪，彻底摧毁网络交友类性侵犯罪网",
+                "公安部：零容忍查处性侵犯罪，彻底摧毁网络交友类性侵犯罪网 - 知乎",
+                "\\xb9\\xab\\xb0\\xb2\\xb2\\xbf\\xb2\\xbf\\xca\\xf0\\xcdƽ\\xf8\\xb4\\xf2\\xbb\\xf7\\xd0\\xd4\\xc7ַ\\xb8\\xd7\\xefר\\xcf\\xee\\xd0ж\\xaf--\\xc9\\xe7\\xbbᡤ\\xb7\\xa8\\xd6\\xce--\\xc8\\xcb\\xc3\\xf1\\xcd\\xf8",
+                "公安部要求零容忍查处性侵犯罪#，彻底摧... 来自共青团中央- 微博",
+                "公安部部署推进打击性侵犯罪专项行动#公... 来自中国警察网- 微博",
+                "公安部部署推进打击性侵犯罪专项行动_案件_积案_整治",
+                "\\xb9\\xab\\xb0\\xb2\\xb2\\xbfҪ\\xc7\\xf3\\xc1\\xe3\\xc8\\xdd\\xc8̲鴦\\xd0\\xd4\\xc7ַ\\xb8\\xd7\\xb3\\xb9\\xb5״ݻ\\xd9\\xcd\\xf8\\xc2罻\\xd3\\xd1\\xc0\\xe0\\xd0\\xd4\\xc7ַ\\xb8\\xd7\\xef\\xcd\\xf8_\\xb9\\xfa\\xc4\\xda\\xd0\\xc2\\xce\\xc5_\\xb4\\xf3\\xd6\\xda\\xcd\\xf8",
+                "公安部要求零容忍查处性侵犯罪，彻底摧毁网络交友类性侵犯罪网_张天培_积案_警力"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "UPDATE",
+            "caption": [
+                "",
+                "disruptionのTwitterイラスト検索結果。",
+                "",
+                "Windows 11: A guide to the updates | Computerworld",
+                "software update",
+                "Time To Update Blue Label On White Background Blue Banner Vector Illustration Stock Illustration - Download Image Now - iStock",
+                "Time to update blue label on white background. Blue banner. Vector illustration",
+                "Time To Update Blue Label On White Background Blue Banner Vector Illustration Stock Illustration - Download Image Now",
+                "Understanding the Windows Unified Update Platform | Computerworld",
+                "cyclical update arrows on a background of orange progress bars",
+                "Update macOS on Mac - Apple Support",
+                "Software Update window in macOS Monterey",
+                "How to Edit, Update, or Remove a Table of Contents in Word",
+                "word-document-table-of-contents-hero"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "俄罗斯卫星通讯社28日报道称根据俄太平洋舰队发布的视频",
+            "caption": [
+                "",
+                "信号不断，战略轰炸机行动后，俄军又在日本海试射超音速反舰导弹_军事频道_中华网",
+                "信号不断，战略轰炸机行动后，俄军又在日本海试射超音速反舰导弹",
+                "视频发布！俄海军试射超音速反舰导弹，摧毁日本海上“敌对目标”",
+                "他们急了：这些美国骗子，正在坑害乌克兰！-津云APP",
+                "日本导演揭批右翼篡改教科书歪曲历史-津云APP",
+                "郑州被挖机损毁车辆车主发声:很气愤但也不敢靠近_新闻频道_中华网",
+                "",
+                "视频发布！俄海军试射超音速反舰导弹，摧毁日本海上“敌对目标”_白蛉_导弹艇_模拟",
+                "俄海军试射超音速反舰导弹，摧毁日本海上“敌对目标”-津云APP",
+                "俄海军试射超音速反舰导弹，摧毁日本海上“敌对目标”|环球网_新浪财经_ ...",
+                "俄海军试射超音速反舰导弹，摧毁日本海上“敌对目标”-津云APP",
+                "现场曝光：俄军在日本海试射超音速导弹 摧毁模拟目标"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "omg user nex isnt wearin black",
+            "caption": [
+                "",
+                "",
+                "Calvin Klein Singapore- Official Online Store",
+                "Milani Make It Last Setting Spray | Setting Spray | Beauty & Personal Care - Shop Your Navy Exchange - Official Site",
+                "My President Was Black - The Atlantic",
+                "Amazon.com: Marshall Headphones M-ACCS-00152 Monitor Headphones ..."
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Lady Gaga foi indicada na categoria Favorite Female Artist no Kids' Choice Awards ",
+            "caption": [
+                "",
+                "BTS and BLACKPINK have been nominated in the ‘Favourite Music Group’ category at the 'Kids' Choice Awards 2023'",
+                "View image on Twitter",
+                "Reddit - Dive into anything",
+                "",
+                "NickALive!",
+                "NickALive!",
+                "NickALive!",
+                "NickALive!",
+                "NickALive!"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "蜈支洲岛好美",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "2023好美，风景好漂亮，没有玩什么项目，就买了120的电瓶车环游岛_蜈支洲岛-评论-去哪儿攻略",
+                "\"好美，风景好漂亮，没有玩什么项目，就买了120的电瓶车环游岛_蜈支洲岛\"的评论图片",
+                "2023今天没下海，就是来看看风景。沙滩上有好多这种布景供游客拍照的，海的颜色好美的，有点像斯米兰岛_蜈支洲岛-评论-去哪儿攻略",
+                "\"今天没下海，就是来看看风景。沙滩上有好多这种布景供游客拍照的，海的颜色好美的，有点像斯米兰岛_蜈支洲岛\"的评论图片",
+                "张纪中与娇妻三亚拍婚纱照，杜星霖穿白纱抱着女儿，好幸福_回应_平台_社交",
+                "蜈支洲岛好美来自Jeokkkk_ - 微博",
+                "张纪中与娇妻三亚拍婚纱照，杜星霖穿白纱抱着女儿，好幸福_腾讯新闻"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "据韩联社28日报道美国核动力航母尼米兹号当天上午驶入釜山作战基地",
+            "caption": [
+                "",
+                "",
+                "美日韩即将举行联合军演，日媒炒作3艘中国军舰穿过对马海峡",
+                "日本防卫省统合幕僚监部30日声称，自卫队29日发现三艘中国海军舰艇穿过对马海峡。",
+                "美日韩军演在即 日媒炒作3艘中国军舰驶向日本海_日方_舰艇_型导弹",
+                "韩媒：美日韩将举行反潜联演，由美军核动力航母牵头 - 新华网客户端",
+                "美日韩即将举行联合军演，日媒炒作3艘中国军舰穿过对马海峡_日方_日本自卫队_舰艇",
+                "美日韩即将举行联合军演，日媒炒作3艘中国军舰穿过对马海峡"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Pfizer said it's seeing waning immunity from its Covid vaccine and plans to develop a booster dose.",
+            "caption": [
+                "",
+                "Pfizer and BioNTech say updated Covid-19 boosters show increased immune response against Omicron variant | CNN",
+                "What’s Driving The Covid-19 Vaccine Price Increases?",
+                "Pfizer and BioNTech begin clinical trial for Omicron-specific vaccine | CNN",
+                "FDA grants priority review to Pfizer/BioNTech Covid-19 vaccine; decision on approval expected by January 2022 | CNN",
+                "Biden administration purchases extra Pfizer doses to prepare for possibility of children vaccine needs and booster shots | CNN Politics",
+                "",
+                "Pfizer says it's time for a Covid vaccine booster; FDA and CDC say not so fast | CNN",
+                "Pfizer says it's time for a Covid vaccine booster; FDA and CDC say not so fast | CNN",
+                "Coronavirus Updates: Covid News: C.D.C. Study Shows Pfizer Vaccine’s Protection Wanes - The New York Times",
+                "Pfizer says it's time for a COVID-19 booster; FDA and CDC say not so fast",
+                "COVID-19 tracker: Omicron booster nods expected Wednesday"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "被中国采取反制措施的两家美国机构都有哪些涉台黑历史",
+            "caption": [
+                "",
+                "",
+                "【解局】被中国采取反制措施的两家美国机构，都有哪些涉台“黑历史”？_新浪新闻",
+                "外交部网站截图",
+                "【解局】被中国采取反制措施的两家美国机构，都有哪些涉台“黑历史”？_手机新浪网",
+                "解局被中国采取反制措施的两家美国机构... 来自环球网- 微博",
+                "【解局】被中国采取反制措施的两家美国机构，都有哪些涉台“黑历史”？|里根_新浪财经_新浪网",
+                "【解局】被中国采取反制措施的两家美国机构，都有哪些涉台“黑历史”？_里根_活动_蔡英文"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "WHAT A YEAR !!! ",
+            "caption": [
+                "",
+                "",
+                "Stream What A Year (Ft. Pharrell Williams & Detail) by Big Sean | Listen online for free on SoundCloud",
+                "What A Year (Ft. Pharrell Williams & Detail)",
+                "Kacey Musgraves -  Oh, what a year..❤️ - YouTube",
+                "vignette design: What A Year!",
+                "Our 5th Anniversary Year Comes to an End: What a Year It's Been ...",
+                "Oh Deer What A Year: C11203",
+                "Northwoods Rubber Stamps"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Please be informed that for all insurance claims valid Pollution certificate is mandatory,if the vehicle pollution certificate validity is expired during the time of accident insurance company's will not cover the accident damages here after th august .",
+            "caption": [
+                "",
+                "PUC Certificates made Mandatory for Motor Insurance RENEWAL ...",
+                "IRDAI circular |",
+                "IRDAI circular",
+                "PUC Certificate For Insurance Renewals Mandatory Now- Mandatory for Insurance Claims?",
+                "PUC Certificate For Insurance",
+                "Log in to Facebook | Facebook",
+                "Pattnayak Pollution Testing & Insurance Centre | Balangir",
+                "Lexlis Justice , Law Firm | Delhi",
+                "",
+                "IJERPH | Free Full-Text | &ldquo;We Need Health for All&rdquo;: Mental Health and Barriers to Care among Latinxs in California and Connecticut",
+                "Ijerph 19 12817 g001 550",
+                "JCM | Free Full-Text | Antithrombotic Treatment Patterns of Patients with Symptomatic Peripheral Arterial Occlusive Disease in Germany: Evidence from Health Insurance Claims Data",
+                "Jcm 11 05455 g001 550",
+                "IJERPH | Free Full-Text | &ldquo;We Need Health for All&rdquo;: Mental Health and Barriers to Care among Latinxs in California and Connecticut",
+                "Ijerph 19 12817 g001 550",
+                "JCM | Free Full-Text | Antithrombotic Treatment Patterns of Patients with Symptomatic Peripheral Arterial Occlusive Disease in Germany: Evidence from Health Insurance Claims Data",
+                "Jcm 11 05455 g001 550",
+                "Air Purifier Original Replacement True Hepa Filter, for AIRROBO ..."
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "老师拍的我 妈妈拍的我们",
+            "caption": [
+                "",
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "上海市卫健委通报4月11日024时上海新增本土新冠肺炎确诊病例994例和无症状感染者22348例",
+            "caption": [
+                "",
+                "微博",
+                "微博",
+                "",
+                "四月以来上海新增本土感染者首次下降，专家：只能说是初见曙光_上海新增感染者首下降 专家解读_疫情_方舱",
+                "上海新增本土感染者首次下降 专家：初见曙光_旅游中国_中国网_中国旅游外宣第一品牌",
+                "[正点财经]科学防疫 国家卫健委：11日新增本土新冠肺炎确诊病例1251例",
+                "图解｜4月12日上海本土疫情速览_美数课_澎湃新闻-The Paper",
+                "拐点到了？刚刚，上海最新通报！“误判”阳性上海夫妻崩溃音频流传，真相如何？热搜第一，微信农场突然火了 中国基金报",
+                "上海本土新增994+22348，超21万感染者在院治疗和医学观察！深夜连续辟谣... | 每日经济新闻"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "好像谈了一段很健康的恋爱",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "谈一段健康的恋爱真的会被治愈_谈一段健康的恋爱_谈一段健康的恋爱真的会被治愈吗 - 抖音",
+                "记不清从什么时候开始 好像就不再共鸣那些感情里的委屈了 现在真的很幸福也很满足#情侣 #细节里的温柔",
+                "谈了一段健康的恋爱后来自我快乐嘛- 微博",
+                "小付爱吃香菜的主页- 抖音"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "by the way, its important to point out again that rather than an evident, plausible strong reference to the pokemon league logo on ashs first hat possibly hinting at liko being a battlergym leader challenger, likos hairpin is basically based on orbeetles antennaes",
+            "caption": [
+                "",
+                "New Pokémon Anime Reveals Visuals, April 14 Debut - News - Anime News Network:SEA",
+                "©Nintendo・Creatures・GAME FREAK・TV Tokyo・ShoPro・JR Kikaku ©Pokémon",
+                "liko-2",
+                "Liko (Pokemon (2023)) - Pictures - MyAnimeList.net",
+                "Liko ",
+                "",
+                "orbeetleのTwitterイラスト検索結果。",
+                "orbeetleのTwitterイラスト検索結果。",
+                "orbeetleのTwitterイラスト検索結果。",
+                "orbeetleのTwitterイラスト検索結果。",
+                "orbeetleのTwitterイラスト検索結果。"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "话说你在天界的时候也这么想过吧",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "香蜜》“邝露”美图分享，从始至终只有她一直陪伴在润玉身边！_百科TA说",
+                "破案、演戏、心理战…… 现在玩游戏的门槛这么高了？ - 知乎",
+                "《中国好声音2021》已经开始盲选，导师已官宣，李健李荣浩缺席！ - 知乎",
+                "周期女王22.2.2实时学习笔记 - 知乎",
+                "《中国好声音2021》已经开始盲选，导师已官宣，李健李荣浩缺席！ - 知乎"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Hillary Clinton grilled for .",
+            "caption": [
+                "",
+                "Hillary phone - Imgflip",
+                "Hillary phone |  THE FAKE BALLOT BOXES PLOT WAS A SUCCESS; WE CAN NOW PROCEED WITH THE MANUAL RECOUNT MANIPULATION PLOT | image tagged in hillary phone | made w/ Imgflip meme maker",
+                "The Verge Archives - Memes - Page 5",
+                "via <a href=\"http://graphics8.nytimes.com/images/2012/07/23/technology/bits-hillary/bits-hillary-tmagArticle.jpg\">graphics8.nytimes.com</a>",
+                "politics hillary phone Memes &amp; GIFs - Imgflip",
+                "Hillary phone |  THE FAKE BALLOT BOXES PLOT WAS A SUCCESS; WE CAN NOW PROCEED WITH THE MANUAL RECOUNT MANIPULATION PLOT | image tagged in hillary phone | made w/ Imgflip meme maker",
+                "Hillary Clinton's Blackberry meme led to initial questions about her email | Mashable",
+                "Hillary Clinton's Blackberry meme led to initial questions about her email",
+                "For 'Texts from Hillary' creator, Tumblr fame helped turn meme-making into a job - The Verge",
+                "via",
+                "via graphics8.nytimes.com",
+                "Hillary Clinton tweets '3-0' as Trump 'SEE YOU IN COURT' becomes meme | Donald Trump | The Guardian",
+                "Trump's Twitter Account Got Deleted For 11 Minutes And The Memes Are Out Of Control - PopBuzz",
+                "\"hillary\" Meme Templates - Imgflip",
+                "Result Page 43 for Memes News, Trends, Reviews, & More | Mashable",
+                "",
+                "Hillary Clinton questioned by FBI as part of email probe | CNN Politics",
+                "Don Emmert/AFP/Getty Images",
+                "Hillary Clinton answers questions from reporters March 10, 2015 at the United Nations in New York. Clinton admitted that she made a mistake in choosing, for convenience, not to use an official email account when she was secretary of state. ",
+                "How One Agent Forced the FBI to Reopen Hillary Clinton Investigation",
+                "Hillary Clinton and Huma Abedin.",
+                "trump comey clinton 2x1",
+                "Hillary Clinton questioned by FBI as part of email probe | CNN Politics",
+                "Kevin LamarquE/Pool/AP",
+                "Hillary Clinton, while U.S. secretary of state, checks her Blackberry on a military plane in October 2011. Clinton <a href=\"http://www.cnn.com/2015/03/10/politics/hillary-clinton-email-scandal-press-conference/index.html\" target=\"_blank\">said she used a private email account</a> for her official work at the State Department and that she did so out of convenience. But she admitted in retrospect \"it would have been better\" to use multiple emails.",
+                "Hillary Clinton questioned by FBI as part of email probe | CNN Politics",
+                "Kevin LamarquE/Pool/AP",
+                "Democratic presidential candidate Hillary Clinton answers a question from an audience member at a town hall discussion with digital content creators at Neuehouse Hollywood on June 28, 2016 in Los Angeles, California.",
+                "Hillary Clinton questioned by FBI as part of email probe | CNN Politics",
+                "Hillary Clinton questioned by FBI as part of email probe | CNN Politics",
+                "Comey says FBI did not 'give a hoot about politics' in Clinton email investigation - Los Angeles Times",
+                "Hillary Clinton questioned by FBI as part of email probe | CNN Politics",
+                "Hillary Clinton questioned by FBI as part of email probe | CNN Politics",
+                "Kevin LamarquE/Pool/AP",
+                "Democratic presidential candidate Hillary Clinton answers a question from an audience member at a town hall discussion with digital content creators at Neuehouse Hollywood on June 28, 2016 in Los Angeles, California."
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "这么一看花花确实更加美貌",
+            "caption": [
+                "",
+                "登录 Facebook",
+                "为什么大熊猫花花这么可爱？ - 知乎",
+                "为什么大熊猫花花这么可爱？ - 知乎",
+                "“花花”走红带动熊猫周边大卖，IP衍生品成天猫新百亿市场",
+                "",
+                "这么一看，花花确实更加美貌来自·魚鱻魚- 微博",
+                "同样是站在花前摆拍，张子枫卖萌浑然天成，鞠婧祎做作的痕迹完全藏不住_照片_镜头_感觉",
+                "美貌带来的红利被夸大了#长得好看确实是加... 来自有故事的皮同学- 微博",
+                "花像桃花，叶像竹叶，路边看到这种野花，小心有毒，别不当回事！_百科TA说"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "恭喜张局喜提五四奖章一枚中国青年五四奖章",
+            "caption": [
+                "",
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "余依婷_百度百科",
+                "Sina Visitor System",
+                "樊振东（1997年1月22日出生的中国乒乓球运动员）_百度百科"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "EXCLUSIVE Paul Pogba will NOT quit the France team, despite claims from the Middle East ",
+            "caption": [
+                "",
+                "Paul Pogba Keluar dari Timnas Prancis karena Agamanya Dilecehkan Presiden?",
+                "Paul Pogba ketika menjalankan umroh sebelum gelaran Piala Dunia 2018.",
+                "pogba",
+                "Pogba Weltmeister Fotos | IMAGO",
+                "Sport Bilder des Tages WM 2018, Empfang von Weltmeister Frankreich im Elysee-Pal",
+                "Berita Terkait paul pogba - Nomor Satu Kaltim",
+                "ป็อกบาจวกสื่อแต่งข่าวอำลาทีมชาติตอบโต้ปธน. | thsport.com",
+                "",
+                "Maino Raiola Expects Paul Pogba To Stay With Juventus Despite Interest",
+                "Paul Pogba",
+                "Are Manchester United seeing a new Paul Pogba or is the old one looking for the exit? | British GQ",
+                "Image may contain Human Person Paul Pogba People Team Team Sport Sport Football Sports Soccer and Clothing",
+                "Alex Morton",
+                "Man Utd won’t sell Paul Pogba in January and accept he will leave on free transfer next summer – Paper Round - Eurosport",
+                "Paul Pogba, Manchester United",
+                "Exclusive: Paul Pogba open to Premier League offers if he leaves Manchester United this summer",
+                "Exclusive: Paul Pogba open to Premier League offers if he leaves Manchester United this summer",
+                "Human traffic: Africa's lost boys | CNN",
+                "Getty Images",
+                "Pogba subsequently joined Manchester United from Le Havre, before signing for Juventus in 2012. He is reportedly earning close to $1.5 million at Juventus. Despite being sent off in France's1-0 defeat by Spain in a World Cup qualifier on Tuesday, Pogba is establishing a reputation as one of Europe's top midfielders.",
+                "Paul Pogba signs for Manchester United | CNN",
+                "PATRIK STOLLARZ/AFP/AFP/Getty Images",
+                "He helped France reach the final of Euro 2016, but was unable to lead his team to victory on home turf.  Eder's extra-time strike won it for Portugal, leaving Pogba and his teammates heartbroken, but a move to Manchester soon beckoned. ",
+                "Exclusive: Paul Pogba open to Premier League offers if he leaves Manchester United this summer",
+                "Exclusive: Paul Pogba open to Premier League offers if he leaves Manchester United this summer",
+                "Paul Pogba will NOT quit the French team following Emmanuel Macron statements on Islamic terrorism | Daily Mail Online"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Playing chess with brother Mycroft.",
+            "caption": [
+                "",
+                "",
+                "Mark Gatiss promises Benedict Cumberbatch will never be replaced on Sherlock - Hindustan Times",
+                "Mark Gatiss, who also plays Sherlock’s brother Mycroft on the BBC series, went on to describe Benedict Cumberbatch, 40 and co-star Martin Freeman as “the definitive Holmes and Watson of our age”.(Facebook/Sherlock)",
+                "Elementary’s Mycroft and Morland Holmes — A Tale of Doyle's Two Mycrofts - I Hear of Sherlock Everywhere",
+                "Pin on The Geek in Me",
+                "Remember when we thought Sherlock and Mycroft were playing an intense game of Chess and it turned out to be Operation? And all our childhoods rejoiced. Watch Sherlock, Sherlock Cast, Sherlock Holmes, Sherlock Season, Sherlock Fandom, Sherlock John, Moriarty, A Birthday Party, Holmes Brothers",
+                "Mycroft",
+                "image",
+                "Leaves in a Pond — DEATH AND CHESS AND MANY CASES",
+                "image"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "峨眉山的猴子判刑了下辈子的梦想破灭了苦涩 ",
+            "caption": [
+                "",
+                "峨眉山猴子被拘留？景区辟谣：不属实，“人猴分离”2020年已施行-津云APP",
+                "先抢劫后打人，峨眉山猴子谁惯的?|野生动物|峨眉山|大猩猩_新浪新闻",
+                "先抢劫后打人，峨眉山猴子谁惯的？ - 全球新闻流 - 六度世界",
+                "知名景区辟谣！",
+                "",
+                "Travelling By Cargo Ship | TravellingTwo: Bicycle Touring Around The World",
+                "Leaving Port",
+                "dsc_6841.jpg",
+                "Travelling By Cargo Ship | TravellingTwo: Bicycle Touring Around ...",
+                "zxg/dict.csv at master · gakaki/zxg · GitHub",
+                "phpcms/dict.csv at master · source-hunter/phpcms · GitHub"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Going over Shel Silversteins old comics where Mickey Mouse smokes weed and gets laid.",
+            "caption": [
+                "",
+                "Shel Silverstein: A compendium of smut and depravity from the creator of ‘Where the Sidewalk Ends’\n        \n         | \n        Dangerous Minds",
+                "Silverstein Mickey Mouse",
+                "",
+                "Ironic Nursery Tune - TV Tropes",
+                "https://static.tvtropes.org/pmwiki/pub/images/scissorman_crop2.jpg",
+                "speech and respect - College of Social Sciences and International ...",
+                "speech and respect - College of Social Sciences and International ...",
+                "Kutucnu_001122 by aquiaqui33 - Issuu",
+                "Kutucnu_001122 by aquiaqui33 - Issuu",
+                "Nintendo: The Console Wars: The Complete History and Strategy",
+                "Source: SportsNation"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Day , Chocolate",
+            "caption": [
+                "",
+                "",
+                "NATIONAL CHOCOLATE CHIP COOKIE DAY - August 4 - National Day Calendar",
+                "Chocolate Chip Cookie Day | August 4",
+                "NATIONAL CHOCOLATE CHIP COOKIE DAY - August 4, 2023 - National Today",
+                "Chocolate Frogs Scavenger Hunt Day 4 (Final Day)! Harry Potter Hogwarts Mystery #shorts - YouTube"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "呼和浩特跳楼呼和浩特北京上海重庆 家里消杀东西都没了妈妈跳楼了孩子被焊死的铁门挡住在撕心裂肺的哭好不容易等来的救护车医护人员只做",
+            "caption": [
+                "",
+                "呼和浩特婦墮樓亡　官方通報：圍擋門未上鎖，死者有自殺傾向",
+                "Reddit - Dive into anything",
+                "呼和浩特中年女墮樓身亡　女兒想求救門卻被焊死　過度防疫掀眾怒",
+                "Reddit - Dive into anything",
+                "",
+                "metanl/internet-zh-forms.num at master · commonsense/metanl · GitHub",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "wordfreq/jieba_zh.txt at master · rspeer/wordfreq · GitHub",
+                "iQIYI - Watch Asian dramas shows movies animes Free online - Streaming Korean drama, Chinese drama, Thai drama, with subtitles and dubbing – iQIYI | iQ.com",
+                "chinese-support-redux/internet-zh at master · luoliyan/chinese-support-redux · GitHub"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "闲言碎语 离婚率不知道是否真实东三省离婚率最高达到了68是穷则思变吗这是不是人口下降的原因感觉国家应该出台政策不生完三胎不允许离婚这也太吓",
+            "caption": [
+                "",
+                "",
+                "东临琅琊 - 临高启明 - 灰机wiki",
+                "213.jpg",
+                "东临琅琊 - 临高启明 - 灰机wiki",
+                "213.jpg",
+                "Weibo-Stance-Analyse-Short-text-classification-/evasampledata4-TaskAA.txt at master · jimth001/Weibo-Stance-Analyse-Short-text-classification- · GitHub",
+                "DYW/DYW_SQL.sql at master · 2663272622/DYW · GitHub"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "A man has been arrested and charged with murder in connection to the killing of Migos rapper Takeoff,",
+            "caption": [
+                "",
+                "Takeoff: Ja Rule, Keke Palmer and more stars pay tribute to fallen artist | CNN",
+                "Prince Williams/WireImage/Getty Images",
+                "Tributes have begun pouring in for late rapper Takeoff, seen here performing in 2021 in Atlanta.",
+                "Migos rapper Takeoff honored by bandmate Offset, Drake, Beyoncé ...",
+                "Tributes poured out online for Takeoff of Hip Hop group Migos following his tragic death in Houston Tuesday morning.",
+                "Tributes poured out online for Takeoff of Hip Hop group Migos following his tragic death in Houston Tuesday morning. ",
+                "A tribute to Takeoff - Old Gold &amp; Black",
+                "A mural in Atlanta depicts Takeoff with an angel’s halo. (Courtesy of WSB-TV 2 Atlanta)",
+                "Takeoff+raps+on+stage+in+an+Atlanta+Braves+cap.",
+                "Justin Bieber will perform at Takeoff's memorial service at the State Farm Arena in Atlanta | Daily Mail Online",
+                "Rest in peace: The services will be held at the State Farm Arena in Atlanta, Georgia on Friday, according to TMZ . The arena is capable of holding more than 20,000 people; Takeoff pictured in 2021",
+                "Rest in peace: The services will be held at the State Farm Arena in Atlanta, Georgia on Friday, according to TMZ . The arena is capable of holding more than 20,000 people; Takeoff pictured in 2021 ",
+                "Takeoff | Gone But Not Forgotten | Tribute To Migos Founder - YouTube",
+                "",
+                "Takeoff shooting: Man charged with murder of Migos rapper in Houston",
+                "Houston Police chief Troy Finner, left, and Mayor Sylvester Turner announce an arrest in connection with the fatal shooting Kirsnick Khari Ball, who is also known as Migos rapper Takeoff, during a news conference on Friday, Dec. 2, 2022 in Houston. Police announced the arrest of Patrick Xavier Clark, 33, who has been charged with murder in the case.",
+                "There's been an arrest in Migos rapper Takeoff's fatal shooting : NPR",
+                "Takeoff arrives at the ESPY Awards in Los Angeles on July 10, 2019.",
+                "Patrick Clark: Arrest in Takeoff murder 1 month after Migos rapper shot in downtown Houston - ABC13 Houston",
+                "Patrick Clark: Arrest in Takeoff murder 1 month after Migos rapper shot in downtown Houston - ABC13 Houston",
+                "Takeoff of rap group Migos murdered: Houston Police arrest 2 suspects"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "怎么会有比电视剧还要精彩的纪录片啊",
+            "caption": [
+                "",
+                "",
+                "怎么会有比电视剧还要精彩的纪录片啊！ ... 来自OMG好物- 微博",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "早饭红枣发糕葡式蛋挞榴莲饼鸡蛋灌饼午饭土豆牛肉油焖小龙虾清炒西兰花水果沙拉",
+            "caption": [
+                "",
+                "",
+                "这是最香的征兵宣传",
+                "这是最香的征兵宣传",
+                "这是最香的征兵宣传_护航_葡式蛋挞_亚丁湾",
+                "这是最香的征兵宣传_护航_葡式蛋挞_亚丁湾",
+                "这是最香的征兵宣传_护航_葡式蛋挞_亚丁湾",
+                "怎样清炒龙虾- 头条搜索",
+                "怎样清炒龙虾- 头条搜索",
+                "怎样清炒龙虾- 头条搜索",
+                "搜狐-生活荟",
+                "枣泥饼的做法大全- 头条搜索",
+                "搜狐-生活荟"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "看家有儿女的时候就觉得夏雪该是她们班班花级别的吧",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "看家有儿女的时候，就觉得夏雪该是她们班班花级别的吧 | Redian新闻",
+                "有网友吹杨紫，发了杨紫在家有儿女里的... 来自麻辣表哥- 微博",
+                "我最近看B站，发现视频也能精修，有个up专... 来自幂幂的肉体饭- 微博",
+                "笑哈哈哈哈哈哈哈哈哈哈哈哈哈来自赤麻莉香- 微博",
+                "家有儿女里的VCD也会蹦迪了来自爱说啥说啥pp - 微博"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "澹台烬你怎么什么都学还给人家翩然换了红衣",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "澹台烬是个学人烬 - 抖音",
+                "#罗云熙 澹台·没有情丝·AI烬：懂了，做皇帝身边一定要有个厉害的红衣女~小狐狸：无语！家人们谁懂啊！#孙珍妮#长月烬明",
+                "澹台烬学人精 - 抖音",
+                "阿烬啊什么都学只会害了你…… #长月烬明 #电视剧长月烬明 #澹台烬是个学人精吧",
+                "澹台烬是个学人烬- #歌曲月华落澹台烬什么都学只会害了你😂，别人养小 ...",
+                "长月烬明# 又名随时随地发现学人烬Ai烬... 来自甜霜啊- 微博",
+                "Sina Visitor System"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "PAKISTANI Soldiers display white flag at a PAK post to collect their soldier's bodies after massive Fire assault by INDIAN ARMY in POJK using mm artillery amp",
+            "caption": [
+                "",
+                "",
+                "Taliban show off captured weapons at Kandahar victory parade | CNN",
+                "Stringer/EPA-EFE/Shutterstock",
+                "Taliban forces celebrate the withdrawal of US forces in Kandahar.",
+                "The elaborate ceremony that says everything you need to know about India-Pakistan tensions - Los Angeles Times",
+                "A Pakistani Ranger, right, and an Indian Border Security Force soldier shake hands during a flag ceremony at the India-Pakistan Wagah Border Post on Oct. 20, 2016.",
+                "Here's Why the U.S. Doesn't Mind India's Silence On Ukraine | Time",
+                "Social activists, school/college students and members of the Gandhi Mandela Foundation call for an end to the war between Russia and Ukraine at Jantar Mantar, on March 3, 2022 in New Delhi, India. (Sonu Mehta/Hindustan Times via Getty Images)",
+                "Peace March Organised To End The Ongoing War Between Russia And Ukraine"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Trump Tweets That Highest Number in History Watched His SOTU Address When in Fact Obama, Clinton, Bush All Beat Him ",
+            "caption": [
+                "",
+                "Trump contradicts spokeswoman on effect of Comey firing | CNN Politics",
+                "JIM WATSON/AFP/Getty Images",
+                "02 trump nbc interview",
+                "Fact Checking Donald Trumps Interview With NBCs Lester Holt",
+                "President Donald Trump is interviewed by Lester Holt.",
+                "Image: President Donald Trump is interviewed by Lester Holt",
+                "Transcript - Interview: Lester Holt of NBC News Interviews Donald Trump at The White House - May 11, 2017 | Factba.se",
+                "Australia’s PM Slowly Realizes Trump Is a Complete Idiot",
+                "2018 Will Be a Fight to Save Democracy From Trump",
+                "",
+                "Twitter hides Donald Trump tweet for 'glorifying violence' | Twitter | The Guardian",
+                "Donald Trump’s censored tweet.",
+                "Pelosi wouldn't be president if Congress delayed elections | wusa9.com",
+                "On social media, #PresidentPelosi began trending Thursday morning, following a tweet from President Trump about wanting to delay the election.",
+                "TV networks hiking ad rates for shows Trump watches  - POLITICO",
+                "10_donald_trump_2_gty_1160.jpg",
+                "The 598 People, Places and Things Donald Trump Has Insulted on Twitter: A Complete List - The New York Times"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "救救我 救救我 救救我吧 怎么脸已经这么小了啊",
+            "caption": [
+                "",
+                "샤이니(SHINee)",
+                "Reddit - Dive into anything",
+                "",
+                "浅草Sen on Twitter: \"简体中文版里的“boy friend”被翻译成了“朋友 ...",
+                "于毅近照曝光撞脸腾格尔？在线喊话托尼老师：救救我的头发！_赵吏_舒城 ...",
+                "“快乐大本营”删除周震南的镜头，周雨被拖累，网友道出原因_合唱",
+                "90 Radio (podcast) - Jacob/Lucy/Naomi | Listen Notes",
+                "90 Radio"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "经查郑州市委政法委常务副书记市新冠肺炎疫情防控指挥部社会管控指导部部长冯献彬",
+            "caption": [
+                "",
+                "",
+                "郑州市委政法委常务副书记等人擅自对部分储户赋红码，多名干部被处分！郑州通报“赋红码”问题 | 每日经济新闻",
+                "郑州通报“赋红码”问题：多名干部擅自决定赋红码被处分- 知乎",
+                "郑州市委政法委常务副书记等人擅自对部分储户赋红码，多名干部被处分！郑州通报“赋红码”问题_郑州多干部擅自决定赋红码被处分_管理_河南省",
+                "郑州通报维权人士付红码问题。 #红码 #郑州 - YouTube",
+                "astrid (@astridlaa) / Twitter",
+                "6月22日，据清风郑州消息，#郑州通报部分村镇银行储户被赋红码问题调查问责情况：多名干部被处理。#社会新闻_郑州_储户_清风",
+                "#郑州通报1317名村镇银行储户被赋红码，市政法委副书记、市新冠肺炎疫情防控指挥部社会管控指导部部长冯献彬负主要领导责任  #周刊君热点_冯献彬_储户_防控",
+                "郑州通报部分村镇银行储户被赋红码问题调查问责情况_国内聚焦_天下_新闻中心_台海网"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Easter U.S. Marines pass out Easter eggs they prepared and decorated for the children at the d Marine Division Memorial Childrens Hospital at Dong Ha. Official USMC photo by Cpl. John G. McCullough. ",
+            "caption": [
+                "",
+                "",
+                "Rail Professional 9th Edition Industry Reference Book by Rail Professional Magazine - Issuu",
+                "Bus & Coach Preservation - October 2022 | PDF | Public Transport | Bus Transport",
+                "Orders, Decorations, Medals and Militaria (13 Oct 21) by Noonans (formerly Dix Noonan Webb) - Issuu",
+                "Rail Professional 9th Edition Industry Reference Book by Rail Professional Magazine - Issuu",
+                "Calaméo - Utf 8 Bus & Coach Preservation Febuary 2022 Compressed",
+                "Utf 8 Bus & Coach Preservation Febuary 2022 Compressed"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "bbq drinks ",
+            "caption": [
+                "",
+                "",
+                "Drinks — New York's Best BBQ Chicken, Ribs & Frozen Drinks | Dallas BBQ",
+                "bbq-2888-drinks-1500x1500-frozens.jpg",
+                "29 Awesome BBQ Drinks | Mix That Drink",
+                "BBQ drink on patio table with mint garnish",
+                "Drinks — New York's Best BBQ Chicken, Ribs & Frozen Drinks | Dallas BBQ",
+                "bbq-2888-drinks-1500x1500-frozens.jpg",
+                "29 Awesome BBQ Drinks | Mix That Drink",
+                "Drinks — New York's Best BBQ Chicken, Ribs & Frozen Drinks | Dallas BBQ"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "The US military shoots down another highaltitude object from the skies,",
+            "caption": [
+                "",
+                "US fighter jet shoots down airborne object over Lake Huron on Sunday | CNN Politics",
+                "The Pentagon is seen from a flight taking off from Ronald Reagan Washington National Airport on November 29, 2022 in Arlington, Virginia. The Pentagon is the headquarters of the U.S. Department of Defense and the world's largest office building.",
+                "Al-Shabaab: US says it killed 12 fighters in Somalia airstrike | CNN Politics",
+                "Alex Wong/Getty Images",
+                "The Pentagon in Arlington, Virginia, is seen on November 29, 2022.",
+                "Unidentified airborne objects: A trio of new intrusions leaves America's leaders grasping for explanations | CNN Politics",
+                "The Pentagon is seen from a flight taking off from Ronald Reagan Washington National Airport on November 29, 2022 in Arlington, Virginia. The Pentagon is the headquarters of the U.S. Department of Defense and the world's largest office building.",
+                "Biden review blames Trump's decisions for chaotic Afghanistan withdrawal as it transmits reports to Congress | CNN Politics",
+                "",
+                "Military shoots down another high-altitude object, over Lake Huron, officials say - ABC News",
+                "PHOTO: Turnip rock, a geological rock formation stands in Lake Huron near Port Austin, Mich.",
+                "What you need to know about the four high-altitude objects shot down over North America",
+                "Sailors assigned to Explosive Ordnance Disposal Group 2 recover a high-altitude surveillance balloon off Myrtle Beach, S.C., on Feb. 5.",
+                "Sailors assigned to Explosive Ordnance Disposal Group 2 recovering a high-altitude surveillance balloon off the coast of Myrtle Beach, S.C., on Feb. 5, 2023.",
+                "Military shoots down another high-altitude object, over Lake Huron, officials say - ABC News",
+                "U.S. shoots down a fourth high-altitude object as lawmakers demand more information"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "处的时间越久结婚几率越小吗",
+            "caption": [
+                "",
+                "",
+                "两个人恋爱的时间越久，能结婚的几率就越小？",
+                "两个人恋爱的时间越久，能结婚的几率就越小？",
+                "杜海涛带家人出行被偶遇，身材暴瘦认不出，沈梦辰小腹突出疑有孕",
+                "同居的越久，结婚的可能性越小，离婚的概率反而更高，真的是这样吗？ - 知乎",
+                "男女同居时的4个相处方式 - 知乎",
+                "恋爱长跑分手，他却火速结婚？_对方_感情_缺点"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "俄军把红旗插到了乌克兰在马里乌波尔的伊里奇钢铁厂 ",
+            "caption": [
+                "",
+                "Fact Check: Photos of Ukraine flag being replaced by Soviet Union flag are AT LEAST seven years old - India Today",
+                "viral claim false",
+                "Viral collage of photos claiming to show man replacing the Ukrainian flag with the flag of the Soviet Union at the Ilyich Iron and Steel Works plant in Mariupol is at least 7 years old. ",
+                "Fact Check: The pictures of a man replacing the Ukrainian flag with the Soviet Union flag are not the latest - Vishvas News",
+                "",
+                "俄军把红旗插到了乌克兰在马里乌波尔的伊里... 来自斯图卡98 - 微博",
+                "spqrspidy (@spqrspidy) / Twitter",
+                "伊里奇钢铁厂参数！俄军插上了红旗！ - 知乎",
+                "俄军终于把红旗插到了乌克兰在马里乌波尔的... 来自史凝眸- 微博",
+                "当俄罗斯不再做苏联的“奶牛”后，发现自己成了案板上的“牛肉”_腾讯新闻"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "obsessed with these types of pics",
+            "caption": [
+                "",
+                "Nctzen paling santuy 🤙🏼👁🫦👁 (@nctzen_haluu) • Instagram photos and videos",
+                "brat pop｜TikTok Search",
+                "",
+                "I'm kinda obsessed with these types of outfits rn. : r/reddeadfashion",
+                "r/reddeadfashion - I'm kinda obsessed with these types of outfits rn.",
+                "OCD (Obsessive-Compulsive Disorder): Symptoms & Treatment",
+                "OCD is usually a life-long condition, but symptoms can come and go over time.",
+                "Examples of obsessions include fear of germs or dirt and fear of making a mistake. An example of a compulsion is repeatedly checking things.",
+                "Is anybody else as obsessed with these types of dresses as I am ...",
+                "r/softclassic - Is anybody else as obsessed with these types of dresses as I am?",
+                "I'm kinda obsessed with these types of outfits rn. : r/reddeadfashion",
+                "r/reddeadfashion - I'm kinda obsessed with these types of outfits rn.",
+                "When the Male Lead is Obsessed with the Youngest Daughter of the ..."
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Facebook's own analysis reveals how the company failed to halt growth of movement dedicated to election lie",
+            "caption": [
+                "",
+                "US curbs national security threats at home, but fuels them abroad - Global Times",
+                "Pro-Trump supporters storm the US Capitol following a rally with President Donald Trump on January 6, 2021 in Washington, DC. Trump supporters gathered in the nation's capital to protest the ratification of President-elect Joe Biden's Electoral College victory over President Trump in the 2020 election. Photo: Samuel Corum/Getty Images/VCG",
+                "Just a moment...",
+                "Charles Flynn: Army now acknowledges Michael Flynn's brother was a part of Army response to Capitol riot | CNN Politics",
+                "News on National Courts & Litigation",
+                "Why there's little the government can do to police the truth on cable TV : NPR",
+                "",
+                "The Facebook whistleblower's documents show how 'Stop the Steal' evaded monitors : NPR",
+                "A protester unleashes a smoke grenade in front of the U.S. Capitol building on Jan. 6.",
+                "The Facebook whistleblower's documents show how 'Stop the Steal' evaded monitors : NPR",
+                "A protester unleashes a smoke grenade in front of the U.S. Capitol building on Jan. 6.",
+                "Facebook failed to police election misinformation among groups ...",
+                "How Facebook played a role in the Jan. 6 Capitol riot - The ..."
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "我爸这性格不管啥东西看中了就得立马买上本来预算34万结果转了也就一个小时就订上了总价差不多8万了五菱缤果",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "2022年12月更新，钢琴品牌选择？钢琴推荐选购建议【附多个钢琴品牌清单】 - 知乎",
+                "希望新闻 - HCS",
+                "女心理师（2021年柯汶利执导的电视剧）_百度百科",
+                "希望新闻 - HCS",
+                "正青春（2021年牟晓杰执导的电视剧）_百度百科"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "人口 上海元旦新生儿跌至个位数太惨了人口断崖式下跌近3000万人口的上海一天才出生7个婴儿单身独身丁克或许是大城市特色人是一切经",
+            "caption": [
+                "",
+                "커넥트디헤어 | Incheon",
+                "커넥트디헤어 | Incheon",
+                "上海22年元旦出生人口? - 知乎",
+                "上海22年元旦出生人口? - 知乎",
+                "震惊！上海2022年元旦新生婴儿才7人？ - 闲聊灌水 -  涪陵在线-FuLing.Com -  Powered by Discuz!",
+                "",
+                "#人口# 上海元旦新生儿跌至个位数",
+                "#人口# 上海元旦新生儿跌至个位数"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "近日互联网冲浪 ",
+            "caption": [
+                "",
+                "군인 무시 쩌는 것들 - 인스티즈(instiz) 인티포털 카테고리",
+                "군인 무시 쩌는 것들 | 인스티즈",
+                "군인 무시 쩌는 것들 - 인스티즈(instiz) 인티포털 카테고리",
+                "군인 무시 쩌는 것들 | 인스티즈",
+                "",
+                "美15月大女童随父乘风破浪 有模有样（组图）-新华网",
+                "夏威夷冲浪大赛 冲浪者腾空跃起“踏浪而行”【3】--图片频道--人民网",
+                "O2O浪潮来势迅猛 优家购着力打造“泛家居”家具网站_安徽频道_凤凰网",
+                "延续硬派风格 哈弗X DOG量产版谍照曝光_手机凤凰网",
+                "夏威夷冲浪大赛 冲浪者腾空跃起“踏浪而行”--图片频道--人民网"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "近日上海崇明区市场监管局执法人员在日常巡查中发现",
+            "caption": [
+                "",
+                "北京BJ80改成奔驰G级被交警拦下，网友：太像了_搜狐汽车_搜狐网",
+                "和漫威里的瓦坎达有自贸协定?美农业部这名单神了_手机新浪网",
+                "",
+                "上海崇明一商家销售280元蔬菜套餐被立案调查，10种蔬菜共计10斤",
+                "上海感染30W，这些发国难财的人，你们还要脸吗？坐等疫情结束进行清算 - 知乎",
+                "上海280元一份蔬菜套餐？立案调查！_广州日报大洋网",
+                "上海感染30W，这些发国难财的人，你们还要脸吗？坐等疫情结束进行清算 - 知乎",
+                "西红柿红薯商标取名- 头条搜索",
+                "零售食品发票- 头条搜索",
+                "用西葫芦怎么做饼视频- 头条搜索",
+                "上海崇明一商家销售280元蔬菜套餐被立案调查，10种蔬菜共计10斤"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "TheReidOut",
+            "caption": [
+                "",
+                "WATCH: Anya Taylor-Joy in her native language: SPANISH! | Last night on #SNL #seasonfinale, Anya Taylor-Joy was proud to deliver part of her monologue in her native Spanish. \n\n#DidYouKnow her native language is... | By NBC Latino",
+                "WATCH: Polish PM Morawiecki says he still trusts the U.S. intel. community after the leaks & discusses the ongoing war in Ukraine.\n\n@MorawieckiM: \"We are... | By Meet the Press",
+                "The ReidOut with Joy Reid - Avaleht",
+                "EARLIER: One Democrat tells Hallie Jackson, \"Tim Scott's present could be Ron DeSantis' future\" in the 2024 presidential race.\n\n\"The idea that there is... | By Meet the Press",
+                "",
+                "The ReidOut (TV Series 2020– ) - IMDb",
+                "Joe Biden, Bill Nye, Lawrence O'Donnell, Maxine Waters, Ayanna Pressley, Keisha Lance Bottoms, Tiffany Cross, Jaime Harrison, Vin Gupta, Rob Davidson, Carlos Hernandez, Aislinn Pulley, Michael Steele, Howard Fineman, Nancy Pelosi, David Cay Johnston, Eric Holder, Kamala Harris, Steve Kornacki, Jeh Johnson, Joy-Ann Reid, Morris O'Kelly, Jason Johnson, Hakeem Jeffries, Stacey Abrams, Pete Buttigieg, Tony Schwartz, Renee Montgomery, Ashish Jha, David Fahrenthold, Charlie Sykes, Larry Krasner, and Lori Lightfoot in The ReidOut (2020)",
+                "Watch The ReidOut Highlights: Aug. 25 - YouTube",
+                "The ReidOut - NBC.com",
+                "New audio reveals McCarthy believed GOP colleagues' rhetoric was \"putting people in danger”"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "GM is again recalling nearly ,",
+            "caption": [
+                "",
+                "GM's Chevy Bolt recall comes with a huge price tag | CNN Business",
+                "Josh Lefkowitz/Getty Images",
+                "The Chevrolet Bolt EV is displayed during the Los Angeles Auto Show at the Los Angeles Convention Center on November 20, 2016 in Los Angeles, California.  ",
+                "WardsAuto Top 10 list includes hybrid, electric, and fuel cell cars",
+                "GM delivers first batch of Bolt EVs in Tesla's backyard",
+                "GM recalling Chevrolet Bolt EVs due to fire risks amid federal probe",
+                "GM stands to lose $9,000 per car on Chevy Bolt",
+                "",
+                "GM recalls nearly 70K Chevrolet Bolt electric vehicles over fire ...",
+                "GM again recalls its US electric vehicles over fire threat | CNN Business",
+                "GM again recalls its US electric vehicles over fire threat | CNN Business",
+                "Fearing battery fires after recalls, people are selling their ...",
+                "GM again recalls its US electric vehicles over fire threat | CNN Business"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": " AllStar Game Jeffrey Leonard, Kirby Puckett, Bo Jackson, and Julio Franco",
+            "caption": [
+                "",
+                "si.com",
+                "",
+                "Classic Photos of Bo Jackson - Sports Illustrated",
+                "Classic Photos of Bo Jackson - Sports Illustrated",
+                "Jackson sits between American Leaguers Jeffrey Leonard, Kirby Puckett and Julio Franco during the 1989 All-S… | Will and jada smith, Will smith, Black couples goals",
+                "Jackson sits between American Leaguers Jeffrey Leonard, Kirby Puckett and Julio Franco during the 1989 All-Star Game at Anaheim Stadium. Will Smith, Will And Jada Smith, Slim Shady, Black Couples Goals, Couple Goals, Couples Vibe, Cute Couples, Eminem, Mano Brown"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "5月20日是中国学生营养日专家表示",
+            "caption": [
+                "",
+                "每5名孩子便有1个小胖墩，减肥要从娃娃抓起！-新华网",
+                "每5名孩子便有1个小胖墩，减肥要从娃娃抓起！_肥胖率_体育课_儿童",
+                "每5名孩子便有1个小胖墩 减肥要从娃娃抓起_肥胖率_体育课_儿童",
+                "每5名孩子便有1个小胖墩，减肥要从娃娃抓起！-新华网",
+                "每5名孩子便有1个小胖墩，减肥要从娃娃抓起！",
+                "每5名孩子便有1個小胖墩，減肥要從娃娃抓起！-新華網",
+                "每5名孩子便有1个小胖墩，减肥要从娃娃抓起！_要闻_新闻中心_长江网_cjn.cn",
+                "每5名孩子便有1个小胖墩，减肥要从娃娃抓起！ | 题典通",
+                "",
+                "微软和哈曼国际合作 打造的Invoke智能音箱只卖150美元_网易科技",
+                "1",
+                "（图表）［服务·生活］约5个中小学生有1个“小胖墩”娃娃健康从规律三餐抓起|新华社|营养|北京_新浪新闻",
+                "如何跟7岁孩子相处- 头条搜索",
+                "issue631 chinesesydneyweekly  by First Media Group - Issuu",
+                "\\xb9\\xf6\\xb6\\xaf\\xd0\\xc2\\xce\\xc5--\\xb9\\xe3\\xce\\xf7\\xd0\\xc2\\xce\\xc5\\xcd\\xf8",
+                "issue 702 Chinese Sydney Weeky by First Media Group - Issuu",
+                "（图表）［服务·生活］约5个中小学生有1个“小胖墩”娃娃健康从规律三餐抓起|新华社|营养|北京_新浪新闻",
+                "issue 682 Chinese Sydney Weeky by First Media Group - Issuu",
+                "issue 702 Chinese Sydney Weeky by First Media Group - Issuu"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Carrie Meek,",
+            "caption": [
+                "",
+                "Carrie Meek, trailblazing Black former congresswoman, dies at 95 | CNN Politics",
+                "Scott J. Ferrell/CQ-Roll Call Group/Getty Images",
+                "Carrie Meek RESTRICTED",
+                "Carrie Meek, Daughter of Sharecroppers Who Blazed Path to Congress, Dies at 95 - Free Press of Jacksonville",
+                "temp carrie meek",
+                "12 Carrie P. Meek Premium High Res Photos - Getty Images",
+                "Rep. Carrie P. Meek, D-Fla., in her office.",
+                "12 Carrie P. Meek Premium High Res Photos - Getty Images",
+                "Rep. Carrie P. Meek, D-Fla., in her office.",
+                "460 J Meek Photos and Premium High Res Pictures - Getty Images",
+                "Rep. Carrie P. Meek, D-Fla., in her office.",
+                "",
+                "Carrie Meek, trailblazing Black former congresswoman, dies at 95 | CNN Politics",
+                "Scott J. Ferrell/CQ-Roll Call Group/Getty Images",
+                "Carrie Meek RESTRICTED",
+                "Carrie Meek, pioneering Black former congresswoman, dies",
+                "Obit-Carrie Meek",
+                "FILE - Former Florida Congresswoman Carrie Meek cracks up Betty Castor, left as she recalls her time serving in the legislature on senate reunion day, March 20, 2008 in Tallahassee, Fla. Meek, the grandchild of a slave and a sharecropper’s daughter who became one of the first black Floridians elected to Congress since Reconstruction, died Sunday, Nov. 28, 2021. She was 95. (AP Photo/Steve Cannon)",
+                "Carrie Meek, pioneering Black former congresswoman, dies at 95  - POLITICO",
+                "Carrie Meek smiles as she speaks during services.",
+                "Carrie Meek, pioneering former congresswoman, dies at 95"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "The Biden administration and the EU reached an agreement on easing Trumpera sanctions on aluminum and steel,",
+            "caption": [
+                "",
+                "Stock Market Insights | Seeking Alpha",
+                "",
+                "Biden administration, EU reach agreement to ease Trump tariffs on aluminum and steel | CNN Politics",
+                "Drew Angerer/Getty Images",
+                "A worker leaves U.S. Steel Edgar Thomson Steel Works on March 10, 2018 in Braddock, Pennsylvania. ",
+                "Biden administration, EU reach agreement to ease Trump tariffs on aluminum and steel",
+                "BRADDOCK, PA - MARCH 10: A worker leaves U.S. Steel Edgar Thomson Steel Works, March 10, 2018 in Braddock, Pennsylvania. On Thursday, President Donald Trump signed an order to impose new tariffs on imported steel and aluminum. Trump is visiting the state on Saturday evening for a rally with Republican Congressional candidate Rick Saccone.",
+                "Steel Industry Hopes To Benefit From President Trump's Proposed Tariffs On Imported Steel",
+                "Biden administration, EU reach agreement to ease Trump tariffs on aluminum and steel | CNN Politics",
+                "Drew Angerer/Getty Images",
+                "A worker leaves U.S. Steel Edgar Thomson Steel Works on March 10, 2018 in Braddock, Pennsylvania. ",
+                "Biden administration, EU reach agreement to ease Trump tariffs on aluminum and steel | CNN Politics",
+                "Drew Angerer/Getty Images",
+                "A worker leaves U.S. Steel Edgar Thomson Steel Works on March 10, 2018 in Braddock, Pennsylvania. ",
+                "Biden administration, EU reach agreement to ease Trump tariffs on aluminum and steel | CNN Politics",
+                "Drew Angerer/Getty Images",
+                "A worker leaves U.S. Steel Edgar Thomson Steel Works on March 10, 2018 in Braddock, Pennsylvania. "
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Acclaimed historical fiction writer Wilbur Smith,",
+            "caption": [
+                "",
+                "Bestselling novelist Wilbur Smith dies aged 88 - CNN",
+                "HAIDER SHAH/AFP/AFP via Getty Images",
+                "Wilbur Smith talks at the International Festival of Literature in Dubai on February 27, 2009. ",
+                "Why are novelists turning to co-authors? - BBC News",
+                "James Patterson was the highest-earning author of the past year thanks to his 14 titles in 2011-2012",
+                "Wilbur Smith",
+                "Wilbur Smith Photos and Premium High Res Pictures - Getty Images",
+                "Internationally acclaimed Central African born author, Wilbur Smith, shares his experience during the second day of the International Festival of...",
+                "Wilbur Smith: Prolific thriller writer who sold 140 million books | The Independent",
+                "",
+                "Bestselling author Wilbur Smith dies aged 88 | Wilbur Smith | The Guardian",
+                "Wilbur Smith in London in 2013. The author died at his Cape Town home on Saturday aged 88.",
+                "Wilbur Smith in London in 2013",
+                "Wilbur Smith, bestselling novelist, dies aged 88 | CNN",
+                "HAIDER SHAH/AFP/AFP via Getty Images",
+                "Wilbur Smith talks at the International Festival of Literature in Dubai on February 27, 2009. ",
+                "Bestselling author Wilbur Smith dies aged 88 | Wilbur Smith | The Guardian",
+                "Wilbur Smith in London in 2013. The author died at his Cape Town home on Saturday aged 88.",
+                "Wilbur Smith in London in 2013",
+                "Global bestselling novelist Wilbur Smith dies aged 88 | South China Morning Post",
+                "Author Wilbur Smith. Photo: AFP",
+                "Wilbur Smith obituary | Books | The Guardian",
+                "Wilbur Smith in 2013. ‘I don’t write literature, I write stories,’ he said."
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "上周的嘉兴行 嘉兴",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "",
+                "嘉兴九龙山、淀山湖二日游：骑行露营、观海观星、观日出日落 - V2EX",
+                "BKFXM6.md.jpg"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "柳岩 拜托她可是柳岩诶",
+            "caption": [
+                "",
+                "柳岩《张天志》《全世界》同上华表奖袁和平赞：打得非常好 - 新浪",
+                "柳岩《张天志》《全世界》同上华表奖  袁和平赞：打得非常好",
+                "柳岩《张天志》《全世界》同上华表奖  袁和平赞：打得非常好_茱莉亚",
+                "Sina Visitor System",
+                "沒錯這真的是柳岩！戲份挺多的畢竟是女主！能打還很耐看！ - iFuun",
+                "柳岩晒性感照，还自称是个狠角色，网友：你说的都对！_裙子",
+                "",
+                "徐海乔爆料刘亦菲主动加他的微信，和陈建斌比颜值太不应该 - 知乎",
+                "徐海乔 刘亦菲 搞笑  我也不想演渣男啊，但是那可是刘亦菲诶~_哔哩哔哩_bilibili",
+                "娱乐大爆料：杨紫、王俊凯、黄子韬、王楚然、柳岩、吴磊 - 知乎",
+                "徐海乔爆料刘亦菲主动加他的微信，和陈建斌比颜值太不应该 - 知乎"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "为什么都喜欢右边的姐姐",
+            "caption": [
+                "",
+                "",
+                "404 \\xc4\\xfa\\xb7\\xc3\\xceʵ\\xc4ҳ\\xc3\\xe6\\xd5Ҳ\\xbb\\xb5\\xbd\\xc1\\xcb_\\xcc\\xdaѶ\\xcd\\xf8",
+                "🇪🇺Bossin🇪🇺 on Twitter: \"搞艺术的大姐姐说，当年她喜欢的几个小众 ...",
+                "高矮闺蜜同穿热裤+T恤，矮的却“心机”扎衣摆，意外更显腿长_姐姐_穿着_t恤",
+                "404 \\xc4\\xfa\\xb7\\xc3\\xceʵ\\xc4ҳ\\xc3\\xe6\\xd5Ҳ\\xbb\\xb5\\xbd\\xc1\\xcb_\\xcc\\xdaѶ\\xcd\\xf8",
+                "当闺蜜拿你做陪衬时，就学她在裤子上“做手脚”，绝对吸引人_衣服_姐姐_ ..."
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "今天很wow 泪目在我的学生时代非常重要的回忆 对篮球的热爱起因就是灌篮高手 年轻 热血和热爱瑞思拜",
+            "caption": [
+                "",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "",
+                "今天很wow# 泪目[泪][泪][泪]在我的学生时... 来自李斯丹妮- 微博",
+                "今天很wow# 泪目[泪][泪][泪]在我的学生时... 来自李斯丹妮- 微博",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "U.",
+            "caption": [
+                "",
+                "U.S. State Department approves potential sale of Tomahawk missiles to Australia -Pentagon | Reuters",
+                "The U.S. Navy guided-missile destroyer USS Laboon fires a Tomahawk land attack missile April 14, 2018. U.S. Navy/Mass Communication Specialist 3rd Class Kallysta Castillo/Handout via REUTERS",
+                "The guided-missile destroyer USS Laboon fires a Tomahawk land attack missile",
+                "Raytheon Technologies Corp - Reuters",
+                "The guided-missile destroyer USS Laboon fires a Tomahawk land attack missile",
+                "Drone strikes oil tank at airfield in Russia's Kursk near Ukraine border | Technology",
+                "Representative image Image Credit: ANI",
+                "Drone strikes oil tank at airfield in Russia's Kursk near Ukraine border",
+                "Russian shelling kills one, wounds nine in Ukraine's Kherson - governor | Science-Environment",
+                "Representative image Image Credit: ANI",
+                "Russian shelling kills one, wounds nine in Ukraine's Kherson - governor",
+                "RTX.N -  | Stock Price & Latest News | Reuters",
+                "",
+                "Civilians flee eastern Ukraine in advance of a widely forecast attack – as it happened | Ukraine | The Guardian",
+                "A Russian soldier patrols at the Mariupol drama theatre hit by an airstrike in March.",
+                "Russia cyberattack by military intelligence GRU unit targeted Organization for the Prohibition of Chemical Weapons, Netherlands says  today - Live updates - CBS News",
+                "gru-russia-netherlands-opcw-car.jpg ",
+                "Civilians flee eastern Ukraine in advance of a widely forecast attack – as it happened | Ukraine | The Guardian",
+                "A Russian soldier patrols at the Mariupol drama theatre hit by an airstrike in March.",
+                "Russia blocking OPCW from Syria alleged chemical weapons attack site after US strikes, Britain and allies say - CBS News",
+                "Russia blocking OPCW from Syria alleged chemical weapons attack site after US strikes, Britain and allies say - CBS News"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "happy Vals day from me mines",
+            "caption": [
+                "",
+                "",
+                "Happy Valentines Day Be Mine GIF - Happy Valentines Day Valentines Day Be Mine - Discover & Share GIFs",
+                "Happy Valentines Day Be Mine GIF - Happy Valentines Day Valentines Day Be Mine GIFs",
+                "Happy valentine's day, from me and mine to you and ores. : r/Minecraft",
+                "r/Minecraft - Happy valentine's day, from me and mine to you and ores.",
+                "Happy Valentines Day Be Mine You And Me Kiss Me Greeting Cards Posters With Watercolor Hand Drawn Stain Hearts Vector Background With Hand Lettering Set Stock Illustration - Download Image Now - iStock",
+                "Happy Valentines Day, Be mine, You and me, Kiss me greeting cards, posters with watercolor hand drawn stain, hearts. Vector background with hand lettering. Set.",
+                "Happy Valentines Day, Be mine, You and me, Kiss me greeting cards, posters with watercolor hand drawn stain, hearts. Vector background with hand lettering. Set. Heart Shape stock vector",
+                "Valentines Day Sign-candy Hearts-be Mine-hug Me-xoxo-kiss - Etsy"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "路北公安网络发言人 11日凌晨通报继抓获涉嫌在烧烤店寻衅滋事暴力殴打他人案件两名主要犯罪嫌疑人之后6月11日凌晨",
+            "caption": [
+                "",
+                "",
+                "唐山通报烧烤店打人事件：已抓获5人，2人被刑拘_唐山烧烤店打人事件已抓获5人_唐山多名男子围殴女子 警方回应_媒体：唐山烧烤店打人者已被控制",
+                "烧烤店打人事件已抓获5人 警方正着力抓捕外省籍涉案人_新闻频道_央视网(cctv.com)",
+                "唐山烧烤店打人事件：又抓获三名涉案人员(含视频)_手机新浪网",
+                "唐山烧烤店打人事件已抓获五人#@路北... 来自中国新闻网- 微博",
+                "又抓获3人！已抓获5人！唐山警方：赴外省抓捕其他4名涉案人员！央视评论：扫黑除恶绝不能有盲区 | 每日经济新闻",
+                "唐山通报烧烤店打人事件：已抓获5人，2人被刑拘--首页--人民网",
+                "烧烤店打人事件已抓获5人 警方正着力抓捕外省籍涉案人",
+                "唐山烧烤店打人事件已抓获8人，另一人正全力抓捕_邯郸新闻网",
+                "唐山烧烤店打人案最新进展！已抓获8名嫌疑人！_唐山打人嫌犯开迈巴赫逃往江苏_唐山烧烤店打人事件已抓获5人_唐山打人事件最后一人抓捕现场"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "当你妹儿在晋江找文突然发现是亲姐时",
+            "caption": [
+                "",
+                "【曝光】“九环智能合约”圈钱百亿崩盘，投资者跳楼轻生！_腾讯新闻",
+                "",
+                "当你妹儿在晋江找文突然发现是亲姐时（ ... 来自开心是福嘛OVO - 微博",
+                "当你妹儿在晋江找文突然发现是亲姐时（ ... 来自开心是福嘛OVO - 微博",
+                "当你妹儿在晋江找文突然发现是亲姐时（ ... 来自开心是福嘛OVO - 微博",
+                "\\xa1\\xb6\\xc4κ\\xce\\xd0ļ\\xe2\\xb6\\xf9\\xcc\\xf0\\xa1\\xb7\\xc1\\xf9\\xd4\\xc2\\xc7\\xe5\\xd6\\xf1_\\xa1\\xbeԭ\\xb4\\xb4С˵|\\xd1\\xd4\\xc7\\xe9С˵\\xa1\\xbf_\\xbd\\xfa\\xbd\\xad\\xce\\xc4ѧ\\xb3\\xc7",
+                "\\xa1\\xb6ʮ\\xb6\\xfe\\xd4£\\xacѰ\\xd5\\xd2\\xcb\\xfd\\xa1\\xb7\\xb7\\xe7\\xc0\\xb4\\xcd\\xeb\\xc0\\xef_\\xa1\\xbeԭ\\xb4\\xb4С˵|\\xd1\\xd4\\xc7\\xe9С˵\\xa1\\xbf_\\xbd\\xfa\\xbd\\xad\\xce\\xc4ѧ\\xb3\\xc7"
+            ]
+        }
+    },
+    {
+        "label": "rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "广州昨日新增1325名感染者 中大面料市场辐射整个广州服装业附近的康乐村很多制衣小厂小作坊平时本来就靠劳动密集型挣辛苦钱可以说广州最穷的聚集地之",
+            "caption": [
+                "",
+                "Reddit - Dive into anything",
+                "Reddit - Dive into anything",
+                "Reddit - Dive into anything",
+                "Reddit - Dive into anything",
+                "Just a moment...",
+                "",
+                "metanl/internet-zh-forms.num at master · commonsense/metanl · GitHub",
+                "chinese-support-redux/internet-zh at master · luoliyan/chinese-support-redux · GitHub",
+                "perapera-frequency/internet-zh.num at master · ernop/perapera-frequency · GitHub",
+                "Kaldi_thchs30/words.txt at master · FarawaySail/Kaldi_thchs30 · GitHub",
+                "i4tv/words.txt at master · i4tv/i4tv · GitHub"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "在以色列总理内塔尼亚胡解雇国防部长后该国爆发大规模抗议活动",
+            "caption": [
+                "",
+                "Israel's Netanyahu fires defense minister over opposition to judicial overhaul; protests erupt | Fox News",
+                "Israeli protest",
+                "Israel's Netanyahu fires defense minister over opposition to judicial overhaul; protests erupt",
+                "Israel's Netanyahu fires defense minister over opposition to judicial overhaul; protests erupt",
+                "Israel: Netanyahu fires defense minister, protests ensue – DW – 03/27/2023",
+                "Israel PM Benjamin Netanyahu fires Defence Minister Yoav Gallant for urging halt to overhaul - The Hindu",
+                "",
+                "防长被撤后以色列爆发大规模抗议，白宫迅速发声“深表关切”",
+                "防长被撤后以色列爆发大规模抗议，白宫迅速发声“深表关切”_手机新浪网",
+                "美国连他爹的内政都干预[偷笑][偷笑] ... 来自七步吟诗曹子建- 微博",
+                "国防部长突遭解职，63万民众街头抗议，警方动用高压水枪，以色列总统发声，白宫“深表关切” | 每日经济新闻",
+                "银莲花革命开始了！ 以色列陆军电台：执政... 来自历史的笔记- 微博"
+            ]
+        }
+    },
+    {
+        "label": "unverified",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "I need to buy this card immediately with how many good reviews he's had.",
+            "caption": [
+                "",
+                "Attention Required! | Cloudflare",
+                "Galaxy Opal Nikola Jokic and 98 Zion Williamson Gameplay in NBA 2k23 MyTeam - YouTube",
+                "GALAXY OPAL ZION WILLIAMSON GAMEPLAY!! ZION IS A TOP 5 SF IN NBA 2K23 MyTEAM!! - YouTube",
+                "GALAXY OPAL NIKOLA JOKIC GAMEPLAY! DID 2K FINALLY GIVE US A GOOD JOKER CARD IN NBA 2K23 MyTEAM? - YouTube",
+                "RANKING THE TOP 10 BEST AUCTIONABLE CARDS IN NBA 2K23 MYTEAM! - YouTube",
+                "",
+                "Editorial: LAUSD's Carvalho had an okay first year, but he can do better - Los Angeles Times",
+                "LAUSD Superintendent Alberto Carvalho holds a paper written by fourth-grader Tinniya Wilson. ",
+                "LAUSD Superintendent Alberto Carvalho at Compton Avenue Elementary School STEAM Academy on Feb. 3. Carvalho is entering his second year leading the district, with mixed reviews.",
+                "Eric is the best seller i have ever had he is nice always ...",
+                "r/KobeReps - Eric is the best seller i have ever had he is nice always available and just a good person in general if you wsnt to buy any reps or anything i would go straight to eric he is caring and real just a good person in general and he is very fast @24hoop24",
+                "Editorial: LAUSD's Carvalho had an okay first year, but he can do better - Los Angeles Times",
+                "LAUSD Superintendent Alberto Carvalho holds a paper written by fourth-grader Tinniya Wilson. ",
+                "LAUSD Superintendent Alberto Carvalho at Compton Avenue Elementary School STEAM Academy on Feb. 3. Carvalho is entering his second year leading the district, with mixed reviews.",
+                "Vintage Paper Ephemera Antique Math Number Flashcards Decor Farmhouse Division  | eBay",
+                "Picture 1 of 7",
+                "2018 PANINI CONTENDERS COLLEGE TICKET MARVIN BAGLEY DUKE RCR 9.5/10 AUTO 18/23  | eBay",
+                "Picture 1 of 4"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "Conservative election attorney Ben Ginsberg will testify to the House January investigative committee during its next public hearing tomorrow",
+            "caption": [
+                "",
+                "Bill Stepien: Ex-Trump campaign manager will no longer appear before January 6 committee Monday | CNN Politics",
+                "Saul Loeb/AFP/Getty Images",
+                "Then-Trump campaign manager Bill Stepien listens as then-President Donald Trump visits his campaign headquarters in Arlington, Virginia in November 2020.",
+                "January 6 committee: Ben Ginsberg, conservative election attorney, will testify | CNN Politics",
+                "WASHINGTON, DC - JUNE 9: Former U.S. President Donald Trump is displayed on a screen during a hearing by the Select Committee to Investigate the January 6th Attack on the U.S. Capitol on June 09, 2022 in Washington, DC. The bipartisan committee, which has been gathering evidence related to the January 6 attack at the U.S. Capitol for almost a year, will present its findings in a series of televised hearings. On January 6, 2021, supporters of President Donald Trump attacked the U.S. Capitol Building during an attempt to disrupt a congressional vote to confirm the electoral college win for Joe Biden. (Photo by Drew Angerer/Getty Images)",
+                "What to watch for at Monday's January 6 committee hearing | CNN Politics",
+                "Saul Loeb/AFP/Getty Images",
+                "Campaign Manager Bill Stepien listens as US President Donald Trump visits his campaign headquarters in Arlington, Virginia, November 3, 2020. - A bitterly divided America was going to the polls on Tuesday amid the worst pandemic in a century and an economic crisis to decide whether to give President Donald Trump four more years or send Democrat Joe Biden to the White House. A record-breaking number of early votes -- more than 100 million -- have already been cast in an election that has the nation on edge and is being closely watched in capitals around the world. (Photo by SAUL LOEB / AFP) (Photo by SAUL LOEB/AFP via Getty Images)",
+                "Who is Donald Trumps campaign manager Bill Stepien? - The US Sun",
+                "Credit: AFP or licensors",
+                "He formerly worked for New Jersey Governor Chris Christie",
+                "Jan. 6 Committee Subpoenas Bill Stepien, Michael Flynn and Other Trump Allies  - WSJ",
+                "",
+                "Who are the witnesses testifying at the Jan. 6 hearings? | PBS NewsHour",
+                "U.S. House Select Committee to Investigate the January 6 Attack on the United States Capitol holds its opening public hear...",
+                "How to watch Monday's January 6 committee hearing | CNN Politics",
+                "Andrew Harnik/AP",
+                "Chairman Bennie Thompson delivers his opening statement as the House January 6 committee holds its first hearing of the month on Capitol Hill, Thursday, June 9, 2022, in Washington.",
+                "January 6 committee: Ben Ginsberg, conservative election attorney, will testify | CNN Politics",
+                "January 6 committee: Ben Ginsberg, conservative election attorney, will testify | CNN Politics",
+                "January 6 committee: Ben Ginsberg, conservative election attorney, will testify | CNN Politics"
+            ]
+        }
+    },
+    {
+        "label": "non-rumor",
+        "context": {
+            "instruction": "According to the content in the caption in the following content, to judge whether qCap is a rumor, the thinking steps are as follows: 1. Find out the content related to qCap from the caption. 2. If there is no relevant content, directly output rumor. 3. Based on the relevant content found in step 2, determine whether it is a rumor.",
+            "qCap": "雪山巍峨湖泊静美",
+            "caption": [
+                "",
+                "",
+                "一图看不同海拔的美丽中国# 分享美景！[... 来自环球网- 微博",
+                "世界顶级美景- 头条搜索",
+                "一图看不同海拔的美丽中国# 分享美景！[... 来自环球网- 微博",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "世界顶级绝美风景- 头条搜索",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System",
+                "Sina Visitor System"
+            ]
+        }
+    }
+]

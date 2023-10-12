@@ -1,0 +1,29 @@
+<!-- 相当于import base.html -->
+{% extends 'base.html' %}
+
+<!-- 就可以使用定义的block -->
+{% block content %}
+    <!-- 缩进方便可读，不缩也行 -->
+
+    <!-- 输入h1按tab就补全了 -->
+    <!-- h1是一级标题 -->
+    <h1>Products</h1>
+    <div class="row">
+    <!-- 每列进行循环渲染 -->
+        {% for product in products %}
+            <div class="col">
+                <div class="card" style="width: 18rem">
+                <img src="{{ product.image_url}}" class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 class="card-title">{{prodcut.name}}</h5>
+                    <p class="card-text">
+                    {{product.price}}
+                    </p>
+                    <a href="#" class="btn btn-primary">添加到购物车</a>
+                </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

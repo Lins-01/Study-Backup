@@ -49,12 +49,16 @@ from paddlenlp.utils.log import logger
 # 装饰器
 # 从而让这些数据类具备了自动处理数据初始化和打印信息的功能。
 # 不用写__init__、__repr__、__eq__ 等，少写了重复的代码
+
+# 定义数据处理的一些参数，包括最大tokens长度、是否早停、训练、dev、test、label路径
 class DataArguments:
     # field()返回的是一个特殊的描述符(descriptor)对象，用于对字段进行配置和属性访问控制。
     # 这个描述符对象实际上并不存储字段的值，而是用于管理数据类的字段。
 
     # int 是数据类中应该有的，用来显示的表明类型
     # 类型注解
+
+    # eg ： 表明max_length是int类型，默认是128
     max_length: int = field(default=128, metadata={"help": "Maximum number of tokens for the model."})
     early_stopping: bool = field(default=False, metadata={"help": "Whether apply early stopping strategy."})
     early_stopping_patience: int = field(default=4, metadata={"help": "Stop training when the specified metric worsens for early_stopping_patience evaluation calls"})
@@ -65,6 +69,7 @@ class DataArguments:
 
 
 @dataclass
+# 同理定义模型的一些参数
 class ModelArguments:
     model_name_or_path: str = field(default="ernie-3.0-tiny-medium-v2-zh", metadata={"help": "Build-in pretrained model name or the path to local model."})
     #  Optional[str]

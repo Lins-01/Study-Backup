@@ -15,8 +15,17 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+# 导入include因为products要用
+from django.urls import path,include
+
+# 整个项目的总url管理
 
 urlpatterns = [
+    # 初始化项目就会有的
+    # 表示pyshop内部的每个子模块都是由admin托管
     path("admin/", admin.site.urls),
+
+    # 也在这里注册其它子模块的url 
+    # 告诉任何url从/products开始的都发给products.urls
+    path('products/',include('products.urls'))
 ]

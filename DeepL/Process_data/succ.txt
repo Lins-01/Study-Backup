@@ -1,0 +1,98 @@
+[2023/09/23 22:11:22] ppocr DEBUG: Namespace(alpha=1.0, benchmark=False, beta=1.0, cls_batch_num=6, cls_image_shape='3, 48, 192', cls_model_dir='C:\\Users\\lins/.paddleocr/whl\\cls\\ch_ppocr_mobile_v2.0_cls_infer', cls_thresh=0.9, cpu_threads=10, crop_res_save_dir='./output', det=True, det_algorithm='DB', det_box_type='quad', det_db_box_thresh=0.6, det_db_score_mode='fast', det_db_thresh=0.3, det_db_unclip_ratio=1.5, det_east_cover_thresh=0.1, det_east_nms_thresh=0.2, det_east_score_thresh=0.8, det_limit_side_len=960, det_limit_type='max', det_model_dir='C:\\Users\\lins/.paddleocr/whl\\det\\ch\\ch_PP-OCRv4_det_infer', det_pse_box_thresh=0.85, det_pse_min_area=16, det_pse_scale=1, det_pse_thresh=0, det_sast_nms_thresh=0.2, det_sast_score_thresh=0.5, draw_img_save_dir='./inference_results', drop_score=0.5, e2e_algorithm='PGNet', e2e_char_dict_path='./ppocr/utils/ic15_dict.txt', e2e_limit_side_len=768, e2e_limit_type='max', e2e_model_dir=None, e2e_pgnet_mode='fast', e2e_pgnet_score_thresh=0.5, e2e_pgnet_valid_set='totaltext', enable_mkldnn=False, fourier_degree=5, gpu_id=0, gpu_mem=500, help='==SUPPRESS==', image_dir=None, image_orientation=False, ir_optim=True, kie_algorithm='LayoutXLM', label_list=['0', '180'], lang='ch', layout=True, layout_dict_path=None, layout_model_dir=None, layout_nms_threshold=0.5, layout_score_threshold=0.5, max_batch_size=10, max_text_length=25, merge_no_span_structure=True, min_subgraph_size=15, mode='structure', ocr=True, ocr_order_method=None, ocr_version='PP-OCRv4', output='./output', page_num=0, precision='fp32', process_id=0, re_model_dir=None, rec=True, rec_algorithm='SVTR_LCNet', rec_batch_num=6, rec_char_dict_path='D:\\Software\\CodeApp\\Anaconda\\envs\\paddle\\lib\\site-packages\\paddleocr\\ppocr\\utils\\ppocr_keys_v1.txt', rec_image_inverse=True, rec_image_shape='3, 48, 320', rec_model_dir='C:\\Users\\lins/.paddleocr/whl\\rec\\ch\\ch_PP-OCRv4_rec_infer', recovery=False, return_word_box=False, save_crop_res=False, save_log_path='./log_output/', scales=[8, 16, 32], ser_dict_path='../train_data/XFUND/class_list_xfun.txt', ser_model_dir=None, show_log=True, sr_batch_num=1, sr_image_shape='3, 32, 128', sr_model_dir=None, structure_version='PP-StructureV2', table=True, table_algorithm='TableAttn', table_char_dict_path=None, table_max_len=488, table_model_dir=None, total_process_num=1, type='ocr', use_angle_cls=True, use_dilation=False, use_gpu=True, use_mp=False, use_npu=False, use_onnx=False, use_pdf2docx_api=False, use_pdserving=False, use_space_char=True, use_tensorrt=False, use_visual_backbone=True, use_xpu=False, vis_font_path='./doc/fonts/simfang.ttf', warmup=False)
+[2023/09/23 22:11:31] ppocr DEBUG: dt_boxes num : 1, elapse : 2.5553524494171143
+[2023/09/23 22:11:31] ppocr DEBUG: cls num  : 1, elapse : 0.01322627067565918
+[2023/09/23 22:11:31] ppocr DEBUG: rec_res num  : 1, elapse : 0.01711583137512207
+[2023/09/23 22:11:31] ppocr DEBUG: dt_boxes num : 392, elapse : 0.14456415176391602
+[2023/09/23 22:11:32] ppocr DEBUG: cls num  : 392, elapse : 0.340395450592041
+[2023/09/23 22:11:33] ppocr DEBUG: rec_res num  : 392, elapse : 1.780907154083252
+[2023/09/23 22:11:34] ppocr DEBUG: dt_boxes num : 473, elapse : 0.26567792892456055
+[2023/09/23 22:11:34] ppocr DEBUG: cls num  : 473, elapse : 0.5775260925292969
+[2023/09/23 22:11:38] ppocr DEBUG: rec_res num  : 473, elapse : 4.046920299530029
+[2023/09/23 22:11:38] ppocr DEBUG: dt_boxes num : 19, elapse : 0.033672332763671875
+[2023/09/23 22:11:39] ppocr DEBUG: cls num  : 19, elapse : 0.03445744514465332
+[2023/09/23 22:11:39] ppocr DEBUG: rec_res num  : 19, elapse : 0.169907808303833
+[2023/09/23 22:11:39] ppocr DEBUG: dt_boxes num : 16, elapse : 0.030800819396972656
+[2023/09/23 22:11:39] ppocr DEBUG: cls num  : 16, elapse : 0.06557369232177734
+[2023/09/23 22:11:39] ppocr DEBUG: rec_res num  : 16, elapse : 0.0605926513671875
+[2023/09/23 22:11:39] ppocr DEBUG: dt_boxes num : 4, elapse : 0.016564607620239258
+[2023/09/23 22:11:39] ppocr DEBUG: cls num  : 4, elapse : 0.0060613155364990234
+[2023/09/23 22:11:39] ppocr DEBUG: rec_res num  : 4, elapse : 0.013446569442749023
+[2023/09/23 22:11:39] ppocr DEBUG: dt_boxes num : 1, elapse : 0.013414144515991211
+[2023/09/23 22:11:39] ppocr DEBUG: cls num  : 1, elapse : 0.004018068313598633
+[2023/09/23 22:11:39] ppocr DEBUG: rec_res num  : 1, elapse : 0.007088899612426758
+[2023/09/23 22:11:39] ppocr DEBUG: dt_boxes num : 11, elapse : 0.036931514739990234
+[2023/09/23 22:11:39] ppocr DEBUG: cls num  : 11, elapse : 0.012526512145996094
+[2023/09/23 22:11:39] ppocr DEBUG: rec_res num  : 11, elapse : 0.03763008117675781
+[2023/09/23 22:11:39] ppocr DEBUG: dt_boxes num : 4, elapse : 0.03354191780090332
+[2023/09/23 22:11:39] ppocr DEBUG: cls num  : 4, elapse : 0.00536799430847168
+[2023/09/23 22:11:39] ppocr DEBUG: rec_res num  : 4, elapse : 0.012409448623657227
+[2023/09/23 22:11:39] ppocr DEBUG: dt_boxes num : 13, elapse : 0.03500509262084961
+[2023/09/23 22:11:39] ppocr DEBUG: cls num  : 13, elapse : 0.015130281448364258
+[2023/09/23 22:11:39] ppocr DEBUG: rec_res num  : 13, elapse : 0.04726362228393555
+[2023/09/23 22:11:39] ppocr DEBUG: dt_boxes num : 123, elapse : 0.06056046485900879
+[2023/09/23 22:11:39] ppocr DEBUG: cls num  : 123, elapse : 0.11266112327575684
+[2023/09/23 22:11:40] ppocr DEBUG: rec_res num  : 123, elapse : 0.2763223648071289
+[2023/09/23 22:11:40] ppocr DEBUG: dt_boxes num : 19, elapse : 0.0272214412689209
+[2023/09/23 22:11:40] ppocr DEBUG: cls num  : 19, elapse : 0.021742582321166992
+[2023/09/23 22:11:40] ppocr DEBUG: rec_res num  : 19, elapse : 0.1604468822479248
+[2023/09/23 22:11:40] ppocr DEBUG: dt_boxes num : 2, elapse : 0.02023625373840332
+[2023/09/23 22:11:40] ppocr DEBUG: cls num  : 2, elapse : 0.026090621948242188
+[2023/09/23 22:11:40] ppocr DEBUG: rec_res num  : 2, elapse : 0.015261650085449219
+[2023/09/23 22:11:40] ppocr DEBUG: dt_boxes num : 2, elapse : 0.05185055732727051
+[2023/09/23 22:11:40] ppocr DEBUG: cls num  : 2, elapse : 0.009140968322753906
+[2023/09/23 22:11:40] ppocr DEBUG: rec_res num  : 2, elapse : 0.012742280960083008
+[2023/09/23 22:11:40] ppocr DEBUG: dt_boxes num : 1, elapse : 0.04038357734680176
+[2023/09/23 22:11:40] ppocr DEBUG: cls num  : 1, elapse : 0.006211519241333008
+[2023/09/23 22:11:40] ppocr DEBUG: rec_res num  : 1, elapse : 0.011075496673583984
+[2023/09/23 22:11:40] ppocr DEBUG: dt_boxes num : 0, elapse : 0.023181915283203125
+[2023/09/23 22:11:40] ppocr DEBUG: cls num  : 0, elapse : 0
+[2023/09/23 22:11:40] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023/09/23 22:11:40] ppocr DEBUG: dt_boxes num : 0, elapse : 0.016284704208374023
+[2023/09/23 22:11:40] ppocr DEBUG: cls num  : 0, elapse : 0
+[2023/09/23 22:11:40] ppocr DEBUG: rec_res num  : 0, elapse : 0.0
+[2023-09-23 22:11:40,798] [    INFO] - loading configuration file D:\Software\TEMP-model\checkpoint-4000\config.json
+[2023-09-23 22:11:40,799] [    INFO] - Model config ErnieConfig {
+  "architectures": [
+    "ErnieForSequenceClassification"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "enable_recompute": false,
+  "fuse": false,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 1024,
+  "id2label": {
+    "0": "non-rumor",
+    "1": "rumor",
+    "2": "unverified"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 4096,
+  "label2id": {
+    "non-rumor": 0,
+    "rumor": 1,
+    "unverified": 2
+  },
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 2048,
+  "model_type": "ernie",
+  "num_attention_heads": 16,
+  "num_hidden_layers": 20,
+  "pad_token_id": 0,
+  "paddlenlp_version": null,
+  "pool_act": "tanh",
+  "task_id": 0,
+  "task_type_vocab_size": 16,
+  "type_vocab_size": 4,
+  "use_task_id": true,
+  "vocab_size": 40000
+}
+
+[2023-09-23 22:11:43,426] [    INFO] - All model checkpoint weights were used when initializing ErnieForSequenceClassification.
+
+[2023-09-23 22:11:43,426] [    INFO] - All the weights of ErnieForSequenceClassification were initialized from the model checkpoint at D:\Software\TEMP-model\checkpoint-4000.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use ErnieForSequenceClassification for predictions without further training.
+100%|██████████| 1129/1129 [00:48<00:00, 23.32it/s]
+results: ['rumor', 'rumor', 'rumor']
+
+进程已结束,退出代码0
