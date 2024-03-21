@@ -1,0 +1,18 @@
+python semi_run_seq_cls.py \
+   --do_train \
+   --do_eval \
+   --do_export \
+   --do_predict \
+   --model_name_or_path ernie-3.0-xbase-zh \
+   --dataset cmnli \
+   --output_dir ./best_models \
+   --export_model_dir best_models/ \
+   --config=default.yml \
+   --early_stopping True \
+   --early_stopping_patience 5 \
+   --metric_for_best_model accuracy \
+   --load_best_model_at_end \
+   --evaluation_strategy epoch \
+   --save_strategy epoch \
+   --save_total_limit 26 \
+   --logging_steps 5

@@ -7,6 +7,7 @@ from layers.Embed import DataEmbedding_inverted
 import numpy as np
 
 
+
 class Model(nn.Module):
     """
     Paper link: https://arxiv.org/abs/2310.06625

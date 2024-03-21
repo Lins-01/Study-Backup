@@ -1,0 +1,21 @@
+#数据进行过预处理，相关的脚本将于后续分享
+python train.py \
+    --do_train \
+    --do_eval \
+    --do_export \
+    --model_name_or_path ernie-3.0-xbase-zh \
+    --output_dir checkpoint \
+    --device gpu \
+    --num_train_epochs 100 \
+    --early_stopping True \
+    --early_stopping_patience 5 \
+    --learning_rate 3e-5 \
+    --max_length 128 \
+    --per_device_eval_batch_size 32 \
+    --per_device_train_batch_size 32 \
+    --metric_for_best_model accuracy \
+    --load_best_model_at_end \
+    --logging_steps 5 \
+    --evaluation_strategy epoch \
+    --save_strategy epoch \
+    --save_total_limit 2

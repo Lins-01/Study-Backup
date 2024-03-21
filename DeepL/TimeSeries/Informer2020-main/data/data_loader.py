@@ -76,6 +76,9 @@ class Dataset_ETT_hour(Dataset):
             self.data_y = data[border1:border2]
         self.data_stamp = data_stamp
     
+    # index是dataset的索引，应该是dataloader的batch索引，所以滑动窗口不一定按照顺序。
+    # 每次移动间隔也不一定是1, 移动间隔不重要了，反正都是希望从input_seq中学习到知识去预测output_seq。
+    # 样本的顺序不重要，因为都是独立的。每个index都取到，反而可以增加样本的多样性，让样本变多。
     def __getitem__(self, index):
         s_begin = index
         s_end = s_begin + self.seq_len

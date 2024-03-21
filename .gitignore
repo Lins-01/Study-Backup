@@ -21,6 +21,7 @@
 !.gitignore
 !*.json
 !*.vsdx
+!*.sh
 
 
 # 忽略特定文件夹 
