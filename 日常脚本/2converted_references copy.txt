@@ -1,0 +1,80 @@
+\bibitem{ref1} K. Charikleia, P. Charalampos, M. Vangelis et al., Renewable energy and nuclear power towards sustainable development: Characteristics and prospects. Renewable and sustainable energy reviews {\bf 22}, 187-197 (2013).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref2} L. Gang, W. Xueqian, L. Bin et al., Modeling and control of nuclear reactor cores for electricity generation: A review of advanced technologies. Renewable and Sustainable Energy Reviews {\bf 60}, 116-128 (2016).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref3} J. Kalkkuhl, B. Schmidt, W. Schröder et al., Modelling of Large Nuclear Reactors to Control Power Density Distribution. IFAC Proceedings Volumes {\bf 23}, 85 - 90 (1990).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref4} O. K., D. J. B., Spatial instability analysis in pressurized water reactors. Annals of Nuclear Energy {\bf 38}, 286-294 (2011).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref5} A. Tanweer, K. Mohd. Kaleem, P. Manabendra et al., A review on the clad failure studies. Nuclear Engineering and Design {\bf 241}, 3658-3677 (2011).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref6} N. M. Zaidabadi, A. G. R, Adaptive robust control for axial offset in the P.W.R nuclear reactors based on the multipoint reactor model during load-following operation. Annals of Nuclear Energy {\bf 103}, 251-264 (2017).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref7} F. Fausto, P. Bojan, Advanced operational strategy for the IRIS reactor: Load follow through mechanical shim (MSHIM). Nuclear Engineering and Design {\bf 238}, 3240-3252 (2008).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref10} W. Pengfei, W. Jiashuang, Y. Shoujun et al., Application of an Improved Mechanical Shim Control Strategy for AP1000 Reactor. Nuclear Technology {\bf 187}, 243-259 (2014).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{add1} Z. Y. W, Z. W. J, Mechanical Shim core operational strategy designed for CPR1000 nuclear power plant. Nuclear Engineering and Design {\bf 322}, 14-26 (2017).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref12} S. S R, T. A P, B. B., Modeling and Control of a Large Nuclear Reactor.  {\bf },  (2013).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref13} G. S., S. A., Nuclear reactor engineering.  {\bf },  (1963).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref14} Young, Ho, Park et al., A compensator design controlling neutron flux distribution via observer theory. Annals of Nuclear Energy {\bf 27},  (2000).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref15} H. Thomas V., M. Wade R., P. Todd S., One-group analytical solution to two-region reactor kinetic model. Annals of Nuclear Energy {\bf }, S0306454916303048 (2016).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref16} B. George T., S. Naresh K., Adaptive nuclear reactor control for integral quadratic cost functions. Automatica {\bf 9}, 527-536 (1973).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref17} N. M. G., J. D. W., S. S. H. et al., A model predictive controller for load-following operation of PWR reactors. IEEE Transactions on Nuclear Science {\bf 52}, 1009-1020 (2005).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref18} A. G. R., A. H. R., Sliding mode control design for a PWR nuclear reactor using sliding mode observer during load following operation. Annals of Nuclear Energy {\bf 75}, 611-619 (2015).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref19} L. Gang, Modeling and LQG/LTR control for power and axial power difference of load-follow PWR core. Annals of Nuclear Energy {\bf 68}, 193-203 (2014).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref22} Ray, H. W., Advanced process control.  {\bf },  (1981).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref23} W. Jun Wei, W. Huai Ning, Lyapunov-based design of locally collocated controllers for semi-linear parabolic PDE systems. Journal of the Franklin Institute {\bf 351}, 429-441 (2014).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref24} L. Fushou, J. Dongping, W. Hao, Optimal vibration control of curved beams using distributed parameter models. Journal of Sound and Vibration {\bf },  (2016).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref25}  Meng Bi Cheng ,  Verica Radisavljevic, Wu Chung Su , Sliding mode boundary control of a parabolic PDE system with parameter variations and boundary uncertainties. Automatica {\bf 47}, 381-387 (2011).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref26} M. Ahmed, D. Moussa, C. Jean Pierre, Boundary geometric control of co-current heat exchanger. IFAC Proceedings Volumes {\bf 42}, 363-368 (2009).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref28} F. Emilia, B. Anatoly, Robust sampled-data control of a class of semilinear parabolic systems. Automatica {\bf 48}, 826–836 (2012).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref29} Minghan, Yang, Distributed Parameter Control Method for Axial Neutron Flux in Fast Nuclear Reactor. Nuclear Science, IEEE Transactions on {\bf 66}, 899-910 (2019).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref30} S. Erdenechimeg, W. Janne, B. Sara, Optimization of the reactivity control drum system of ELECTRA. Nuclear Engineering and Design {\bf 252}, 209-214 (2012).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref32} Y. Minghan, S. Yong, W. Jianye et al., Temperature control characteristics analysis of lead-cooled fast reactor with natural circulation. Annals of Nuclear Energy {\bf 90}, 54-61 (2016).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref33} S. S., T. A., B. B., Multipoint Kinetics Modeling of Large Nuclear Reactors.  {\bf },  (2013).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref34} Z. Bahman, F. Nima, Thermal-Hydraulic Analysis of Nuclear Reactors.  {\bf },  (2015).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref35} C. Marco, C. Antonio, M. Vito et al., Transfer function modelling of the Lead-cooled Fast Reactor (LFR) dynamics. Progress in Nuclear Energy {\bf 52}, 715-729 (2010).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref36} C. G. S., PWR advanced fuel high burnup-dependent xenon oscillation controllability assessment. Annals of Nuclear Energy {\bf 124}, 592-605 (2019).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref37} Harrer, J. M, Nuclear power reactor instrumentation systems handbook.  {\bf },  (1973).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref38} S. Mitsuhiro, T. Takeshi, N. Hideo, Performance of Core Exit Thermocouple for PWR Accident Management Action in Vessel Top Break LOCA Simulation Experiment at OECD/NEA ROSA Project. Journal of Power and Energy Systems {\bf 3}, 146-157 (2008).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref39} P. A., Semigroups of linear operators and applications to partial differential equations.  {\bf },  (1983).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref41} W. Huai Ning, W. Jun Wei, L. Han Xiong, Exponential Stabilization for a Class of Nonlinear Parabolic PDE Systems via Fuzzy Control Approach. IEEE Transactions on Fuzzy Systems {\bf 20}, 318-329 (2012).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref42} S. Yoshiyuki, Controllability for Partial Differential Equations of Parabolic Type. SIAM Journal on Control {\bf },  (1974).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{ref44} S. U., S. V., A new bounded real lemma representation for the continuous-time case. IEEE Transactions on Automatic Control {\bf 46}, 1420-1426 (2001).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{controllability_2} S. Yoshiyuki, Controllability for Partial Differential Equations of Parabolic Type. SIAM Journal on Control {\bf 12}, 389-400 (1974).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{CPR1000} Shifa Wu, Jiashuang Wan, Hongbing Song et al., Transient Simulations of CPR1000 Nuclear Power Plant Implementing Advanced Mechanical Shim Control System. Nuclear Science and Engineering {\bf 192}, 275-297 (2018).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{lemma_Gu} Xingsheng Gu, Weisun Jiang, On the Approximate Controllability and Observability for Distributed Parameter Systems. Journal of East China University of Science and Technology {\bf 23}, 596-602 (1997).   \href{https://doi.org/placeholder}{doi: placeholder}
+
+\bibitem{wavelet_Gu}  JIN-SHENG   GUF ,  WEI-SUN   JIANG , The Haar wavelets operational matrix of integration. International Journal of Systems Science {\bf 27}, 623-628 (1996).   \href{https://doi.org/placeholder}{doi: placeholder}
+
