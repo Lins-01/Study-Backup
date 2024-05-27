@@ -362,15 +362,11 @@ def test(model, test_data, test_loader, args, device, itr):
 
     mae, mse, rmse, mape, mspe, smape, nd = metric(preds, trues)
     # print('mae:{:.4f}, mse:{:.4f}, rmse:{:.4f}, smape:{:.4f}, mases:{:.4f}'.format(mae, mse, rmse, smape, mases))
-    print('mae:{:.4f}, mse:{:.4f}, rmse:{:.4f}, smape:{:.4f}'.format(mae, mse, rmse, smape))
+    print('rmse:{:.4f}, mape:{:.4f},mae:{:.4f}, mse:{:.4f},smape:{:.4f}'.format(rmse, mape, mae, mse, smape))
 
-    plt.figure(figsize=(12, 6))
-    plt.plot(min_pred, label='pred')
-    plt.plot(min_true, label='vol_170101010.tempf_true')
-    plt.legend()  # 显示图例,即label
-    plt.savefig('min_true_e10.png')
+
     plt.show()
     print("here")
 
 
-    return mse, mae
+    return mse, mae, rmse, mape, min_pred, min_true, min_rmse
