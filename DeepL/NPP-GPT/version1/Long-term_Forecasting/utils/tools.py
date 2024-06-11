@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt
 
 from utils.metrics import metric
 
-
 plt.switch_backend('agg')
+
 
 def adjust_learning_rate(optimizer, epoch, args):
     # lr = args.learning_rate * (0.2 ** (epoch // 2))
@@ -25,11 +25,11 @@ def adjust_learning_rate(optimizer, epoch, args):
     #         2: 5e-5, 4: 1e-5, 6: 5e-6, 8: 1e-6,
     #         10: 5e-7, 15: 1e-7, 20: 5e-8
     #     }
-    if args.lradj =='type1':
+    if args.lradj == 'type1':
         lr_adjust = {epoch: args.learning_rate if epoch < 3 else args.learning_rate * (0.9 ** ((epoch - 3) // 1))}
-    elif args.lradj =='type2':
+    elif args.lradj == 'type2':
         lr_adjust = {epoch: args.learning_rate * (args.decay_fac ** ((epoch - 1) // 1))}
-    elif args.lradj =='type4':
+    elif args.lradj == 'type4':
         lr_adjust = {epoch: args.learning_rate * (args.decay_fac ** ((epoch) // 1))}
     else:
         args.learning_rate = 1e-4
@@ -64,7 +64,7 @@ class EarlyStopping:
             self.counter += 1
             print(f'EarlyStopping counter: {self.counter} out of {self.patience}')
             if self.counter >= self.patience:
-                self.early_stop = True # 设置为True后，外面的判断就会跳出
+                self.early_stop = True  # 设置为True后，外面的判断就会跳出
         # 发现更优模型，更新best score，保存模型，counter也清零
         else:
             self.best_score = score
@@ -110,9 +110,9 @@ def visual(true, preds=None, name='./pic/test.pdf'):
 
 
 def convert_tsf_to_dataframe(
-    full_file_path_and_name,
-    replace_missing_vals_with="NaN",
-    value_column_name="series_value",
+        full_file_path_and_name,
+        replace_missing_vals_with="NaN",
+        value_column_name="series_value",
 ):
     col_names = []
     col_types = []
@@ -137,7 +137,7 @@ def convert_tsf_to_dataframe(
                         line_content = line.split(" ")
                         if line.startswith("@attribute"):
                             if (
-                                len(line_content) != 3
+                                    len(line_content) != 3
                             ):  # Attributes have both name and type
                                 raise Exception("Invalid meta-data specification.")
 
@@ -145,7 +145,7 @@ def convert_tsf_to_dataframe(
                             col_types.append(line_content[2])
                         else:
                             if (
-                                len(line_content) != 2
+                                    len(line_content) != 2
                             ):  # Other meta-data have only values
                                 raise Exception("Invalid meta-data specification.")
 
@@ -205,7 +205,7 @@ def convert_tsf_to_dataframe(
                                 numeric_series.append(float(val))
 
                         if numeric_series.count(replace_missing_vals_with) == len(
-                            numeric_series
+                                numeric_series
                         ):
                             raise Exception(
                                 "All series values are missing. A given series should contains a set of comma separated numeric values. At least one numeric value should be there in a series."
@@ -256,7 +256,7 @@ def convert_tsf_to_dataframe(
 
 def vali(model, vali_data, vali_loader, criterion, args, device, itr):
     total_loss = []
-    if args.model == 'PatchTST' or args.model == 'DLinear' or args.model == 'TCN':
+    if args.model == 'PatchTST' or args.model == 'DLinear' or args.model == 'TCN' or args.model == 'GRU'or args.model == 'LSTM' or args.model == 'SCINet':
         model.eval()
     else:
         model.in_layer.eval()
@@ -270,7 +270,7 @@ def vali(model, vali_data, vali_loader, criterion, args, device, itr):
             batch_y_mark = batch_y_mark.float().to(device)
 
             outputs = model(batch_x, itr)
-            
+
             # encoder - decoder
             outputs = outputs[:, -args.pred_len:, :]
             batch_y = batch_y[:, -args.pred_len:, :].to(device)
@@ -282,30 +282,39 @@ def vali(model, vali_data, vali_loader, criterion, args, device, itr):
 
             total_loss.append(loss)
     total_loss = np.average(total_loss)
-    if args.model == 'PatchTST' or args.model == 'DLinear' or args.model == 'TCN':
+    if args.model == 'PatchTST' or args.model == 'DLinear' or args.model == 'TCN' or args.model == 'GRU' or args.model == 'LSTM' or args.model == 'SCINet' :
         model.train()
     else:
         model.in_layer.train()
         model.out_layer.train()
     return total_loss
 
+
 def MASE(x, freq, pred, true):
     masep = np.mean(np.abs(x[:, freq:] - x[:, :-freq]))
     return np.mean(np.abs(pred - true) / (masep + 1e-8))
 
+
 def MSE(pred, true):
     return np.mean((pred - true) ** 2)
+
+
 def RMSE(pred, true):
     return np.sqrt(MSE(pred, true))
+
+
 def test(model, test_data, test_loader, args, device, itr):
     preds = []
     trues = []
+    min_pred = None
+    min_true = None
+    min_input = None
     # mases = []
     min_rmse = 100
     model.eval()
     with torch.no_grad():
         for i, (batch_x, batch_y, batch_x_mark, batch_y_mark) in tqdm(enumerate(test_loader)):
-            
+
             # outputs_np = batch_x.cpu().numpy()
             # np.save("emb_test/ETTh2_192_test_input_itr{}_{}.npy".format(itr, i), outputs_np)
             # outputs_np = batch_y.cpu().numpy()
@@ -313,9 +322,9 @@ def test(model, test_data, test_loader, args, device, itr):
 
             batch_x = batch_x.float().to(device)
             batch_y = batch_y.float()
-            
+
             outputs = model(batch_x[:, -args.seq_len:, :], itr)
-            
+
             # encoder - decoder
             outputs = outputs[:, -args.pred_len:, :]
             batch_y = batch_y[:, -args.pred_len:, :].to(device)
@@ -329,12 +338,11 @@ def test(model, test_data, test_loader, args, device, itr):
                     min_rmse = rmse
                     min_pred = pred[j]
                     min_true = true[j]
-
+                    min_input = batch_x[j, -args.seq_len:, :].detach().cpu().numpy()
 
             # preds是把test中每个batch的结果pred，一个个append上的
             preds.append(pred)
             trues.append(true)
-
 
             # if i == 2:
             #
@@ -350,8 +358,6 @@ def test(model, test_data, test_loader, args, device, itr):
             #     plt.show()
             #     print("here")
 
-
-
     preds = np.array(preds)
     trues = np.array(trues)
     # mases = np.mean(np.array(mases))
@@ -364,9 +370,19 @@ def test(model, test_data, test_loader, args, device, itr):
     # print('mae:{:.4f}, mse:{:.4f}, rmse:{:.4f}, smape:{:.4f}, mases:{:.4f}'.format(mae, mse, rmse, smape, mases))
     print('rmse:{:.4f}, mape:{:.4f},mae:{:.4f}, mse:{:.4f},smape:{:.4f}'.format(rmse, mape, mae, mse, smape))
 
-
     plt.show()
     print("here")
 
+    return mse, mae, rmse, mape, min_pred, min_true, min_rmse , min_input
 
-    return mse, mae, rmse, mape, min_pred, min_true, min_rmse
+
+def CompareTest(model, min_input, args, device):
+    model.eval()
+    with torch.no_grad():
+        # 将min_input转换为张量并调整形状
+        min_input = torch.tensor(min_input.values, dtype=torch.float32).unsqueeze(0).to(device)  # 添加批次维度并移动到设备
+        output = model(min_input, 0)
+        pred = output.detach().cpu().numpy()
+
+    return pred
+

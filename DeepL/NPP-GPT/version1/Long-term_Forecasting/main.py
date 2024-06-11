@@ -5,7 +5,10 @@ from models.PatchTST import PatchTST
 from models.GPT4TS import GPT4TS
 from models.DLinear import DLinear
 from models.GRU import GRUModel
+from models.LSTM import LSTMModel
+from models.SCINet import SCINet
 from tee import StdoutTee
+import pandas as pd
 
 import numpy as np
 import torch
@@ -50,7 +53,7 @@ parser.add_argument('--label_len', type=int, default=48)
 parser.add_argument('--decay_fac', type=float, default=0.75)
 parser.add_argument('--learning_rate', type=float, default=0.0001)
 parser.add_argument('--batch_size', type=int, default=512)
-parser.add_argument('--num_workers', type=int, default=10)
+parser.add_argument('--num_workers', type=int, default=0)
 parser.add_argument('--train_epochs', type=int, default=10)
 parser.add_argument('--lradj', type=str, default='type1')
 parser.add_argument('--patience', type=int, default=3)
@@ -101,7 +104,7 @@ mapes = []
 if __name__ == '__main__':
     for ii in range(args.itr):
 
-        setting = '{}_sl{}_ll{}_pl{}_dm{}_nh{}_el{}_gl{}_df{}_eb{}_itr{}_tg{}_epoch{}'.format(args.model_id, 336,
+        setting = '{}_sl{}_ll{}_pl{}_dm{}_nh{}_el{}_gl{}_df{}_eb{}_itr{}_tg{}_epoch{}_dataset_{}'.format(args.model_id, args.seq_len,
                                                                                               args.label_len,
                                                                                               args.pred_len,
                                                                                               args.d_model,
@@ -110,7 +113,8 @@ if __name__ == '__main__':
                                                                                               args.gpt_layers,
                                                                                               args.d_ff, args.embed, ii,
                                                                                               args.target,
-                                                                                              args.train_epochs)
+                                                                                              args.train_epochs,
+                                                                                              args.data_path)
 
         path = os.path.join(args.checkpoints, setting)
         if not os.path.exists(path):
@@ -147,6 +151,12 @@ if __name__ == '__main__':
                 model.to(device)
             elif args.model == 'GRU':
                 model = GRUModel(args)
+                model.to(device)
+            elif args.model == 'LSTM':
+                model = LSTMModel(args)
+                model.to(device)
+            elif args.model == 'SCINet':
+                model = SCINet(args)
                 model.to(device)
             else:
                 model = GPT4TS(args, device)
@@ -226,12 +236,35 @@ if __name__ == '__main__':
                     print("Early stopping")
                     break
 
-            # 保存模型
+            # 加载最好的模型
             best_model_path = path + '/' + 'checkpoint.pth'
             model.load_state_dict(torch.load(best_model_path))
-            print("------------------------------------")
-            mse, mae, rmse, mape, min_pred, min_true, min_rmse = test(model, test_data, test_loader, args, device, ii)
 
+            mse, mae, rmse, mape, min_pred, min_true, min_rmse, min_input = test(model, test_data, test_loader, args, device, ii)
+
+            print("min_pred-------------------------------------min_true")
+            # 将数据转换为 NumPy 数组
+            min_pred_array = np.array(min_pred)
+            min_true_array = np.array(min_true)
+            min_input_array = np.array(min_input)
+
+            # 将数据转换为 Pandas DataFrame
+            min_pred_df = pd.DataFrame(min_pred_array, columns=['min_pred'])
+            min_true_df = pd.DataFrame(min_true_array, columns=['min_true'])
+            min_input_df = pd.DataFrame(min_input_array, columns=['min_input'])
+
+            # 将 DataFrame 保存为 CSV 文件
+            min_pred_name = path + '/' + 'min_pred.csv'
+            min_true_name = path + '/' + 'min_true.csv'
+            min_input_name = path + '/' + 'min_input.csv'
+
+            min_true_df.to_csv(min_true_name, index=False)
+            min_pred_df.to_csv(min_pred_name, index=False)
+            min_input_df.to_csv(min_input_name, index=False)
+
+            print("Data saved to checkpoint's min_pred.csv and min_true.csv and min_input.csv")
+
+            print("------------------------------------")
             rmses.append(rmse)
             mapes.append(mape)
             mses.append(mse)
@@ -248,10 +281,9 @@ if __name__ == '__main__':
             print("mse_mean = {:.4f}, mse_std = {:.4f}".format(np.mean(mses), np.std(mses)))
             print("mae_mean = {:.4f}, mae_std = {:.4f}".format(np.mean(maes), np.std(maes)))
             plt.figure(figsize=(12, 6))
-            label1 = 'pred' + '_min_rmse=' + str(min_rmse)
+            label1 = args.model+'_pred' + '_min_rmse=' + str(min_rmse)
             plt.plot(min_pred, label=label1)
             plt.plot(min_true, label=args.target)
-
             plt.legend()  # 显示图例,即label
             res_name = './res/' + setting + '.png'
             plt.savefig(res_name)

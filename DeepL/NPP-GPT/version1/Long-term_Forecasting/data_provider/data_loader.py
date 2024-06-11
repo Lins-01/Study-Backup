@@ -9,13 +9,15 @@ from utils.timefeatures import time_features
 from utils.tools import convert_tsf_to_dataframe
 import warnings
 from pathlib import Path
+import pickle
 
 warnings.filterwarnings('ignore')
+
 
 class Dataset_ETT_hour(Dataset):
     def __init__(self, root_path, flag='train', size=None,
                  features='S', data_path='ETTh1.csv',
-                 target='OT', scale=True, timeenc=0, freq='h', 
+                 target='OT', scale=True, timeenc=0, freq='h',
                  percent=100, max_len=-1, train_all=False):
         # size [seq_len, label_len, pred_len]
         # info
@@ -47,7 +49,6 @@ class Dataset_ETT_hour(Dataset):
         print("self.enc_in = {}".format(self.enc_in))
         print("self.data_x = {}".format(self.data_x.shape))
         self.tot_len = len(self.data_x) - self.seq_len - self.pred_len + 1
-
 
     def __read_data__(self):
         self.scaler = StandardScaler()
@@ -94,12 +95,12 @@ class Dataset_ETT_hour(Dataset):
     def __getitem__(self, index):
         feat_id = index // self.tot_len
         s_begin = index % self.tot_len
-        
+
         s_end = s_begin + self.seq_len
         r_begin = s_end - self.label_len
         r_end = r_begin + self.label_len + self.pred_len
-        seq_x = self.data_x[s_begin:s_end, feat_id:feat_id+1]
-        seq_y = self.data_y[r_begin:r_end, feat_id:feat_id+1]
+        seq_x = self.data_x[s_begin:s_end, feat_id:feat_id + 1]
+        seq_y = self.data_y[r_begin:r_end, feat_id:feat_id + 1]
         seq_x_mark = self.data_stamp[s_begin:s_end]
         seq_y_mark = self.data_stamp[r_begin:r_end]
 
@@ -111,10 +112,11 @@ class Dataset_ETT_hour(Dataset):
     def inverse_transform(self, data):
         return self.scaler.inverse_transform(data)
 
+
 class Dataset_ETT_minute(Dataset):
     def __init__(self, root_path, flag='train', size=None,
                  features='S', data_path='ETTm1.csv',
-                 target='OT', scale=True, timeenc=0, freq='t', 
+                 target='OT', scale=True, timeenc=0, freq='t',
                  percent=100, max_len=-1, train_all=False):
         # size [seq_len, label_len, pred_len]
         # info
@@ -191,12 +193,12 @@ class Dataset_ETT_minute(Dataset):
     def __getitem__(self, index):
         feat_id = index // self.tot_len
         s_begin = index % self.tot_len
-        
+
         s_end = s_begin + self.seq_len
         r_begin = s_end - self.label_len
         r_end = r_begin + self.label_len + self.pred_len
-        seq_x = self.data_x[s_begin:s_end, feat_id:feat_id+1]
-        seq_y = self.data_y[r_begin:r_end, feat_id:feat_id+1]
+        seq_x = self.data_x[s_begin:s_end, feat_id:feat_id + 1]
+        seq_y = self.data_y[r_begin:r_end, feat_id:feat_id + 1]
         seq_x_mark = self.data_stamp[s_begin:s_end]
         seq_y_mark = self.data_stamp[r_begin:r_end]
 
@@ -207,6 +209,7 @@ class Dataset_ETT_minute(Dataset):
 
     def inverse_transform(self, data):
         return self.scaler.inverse_transform(data)
+
 
 class Dataset_Custom(Dataset):
     def __init__(self, root_path, flag='train', size=None,
@@ -238,9 +241,11 @@ class Dataset_Custom(Dataset):
         self.root_path = root_path
         self.data_path = data_path
         self.__read_data__()
-        
+
         self.enc_in = self.data_x.shape[-1]
-        self.tot_len = len(self.data_x) - self.seq_len - self.pred_len + 1
+        self.tot_len = len(self.data_x) - self.seq_len - self.pred_len + 1  # 计算总数据长度
+        if self.set_type == 0:  # 打印一次即可
+            print("数据集名称：", data_path)
 
     def __read_data__(self):
         self.scaler = StandardScaler()
@@ -258,9 +263,12 @@ class Dataset_Custom(Dataset):
         df_raw = df_raw[['date'] + cols + [self.target]]
         # print(cols)
         # 文件的0.7训练，0.2测试，0.1验证
-        num_train = int(len(df_raw) * 0.7)
+        # 看下这里是多大？？看他是不是把所有选择输入的特征堆叠在一起算的，在一起切割成训 测、
+        num_train = int(len(df_raw) * 0.6)
+
         num_test = int(len(df_raw) * 0.2)
-        num_vali = len(df_raw) - num_train - num_test
+        num_vali = len(df_raw) - num_train - num_test # 剩下的都是vali，所以会和test不一样多
+        print("num_train: {},num_test: {},num_vali: {}".format(num_train, num_test, num_vali))
         # 每个元素表示训练集、验证集、测试集的起始索引
         border1s = [0, num_train - self.seq_len, len(df_raw) - num_test - self.seq_len]
         # 表示训练集、验证集、测试集的结束索引
@@ -280,12 +288,14 @@ class Dataset_Custom(Dataset):
 
             # 先获取4列看看速度,从train 1258290降到了train 15345,应该是通道独立？每个变量都自己训练呗
             # 不加上tolist没法直接append上target。list才可以有这个方法
-            input_features = df_raw.columns[1:4].tolist()
+
+            # 它本身的方法，这里最后一维度，是target，肯定是会取到的 [-1:]
+            input_features = df_raw.columns[1:17].tolist()
             # 加上自身
 
             # input_features.append(self.target)
 
-            df_data = df_raw[input_features]
+            df_data = df_raw[input_features + [self.target]]
             # 根据变量名称获取输入变量
             # 10个，temp两，p两，mflowj四，profile两。效果很差。可能是因为数据不够多，也可能是相关系数问题。
             # input_features = ['vol_170101010.tempf','vol_170102060.tempf','vol_170101030.p','vol_170103060.p','junc_170101014.mflowj','junc_170103054.mflowj','junc_540010000.mflowj','junc_540150000.mflowj','R51_Profile(1)','R51_Profile(34)']
@@ -293,7 +303,8 @@ class Dataset_Custom(Dataset):
             # df_data = df_raw[input_features]
 
             # 打印一下input_features
-            print(f"输入的变量名： ", input_features)
+            if self.set_type == 0:  # 打印一次即可
+                print(f"输入的变量名： ", list(df_data.columns))
 
         # S表示单个变量预测单个变量
         elif self.features == 'S':
@@ -302,7 +313,16 @@ class Dataset_Custom(Dataset):
         if self.scale:
             train_data = df_data[border1s[0]:border2s[0]]
             self.scaler.fit(train_data.values)
+
+            if self.set_type == 2:  # 只保存测试集的
+                # 保存scaler对象
+                with open('scaler_test.pkl', 'wb') as f:
+                    pickle.dump(self.scaler, f)
+                    print("保存测试集scaler对象成功")
+
             data = self.scaler.transform(df_data.values)
+
+
         else:
             data = df_data.values
 
@@ -322,15 +342,45 @@ class Dataset_Custom(Dataset):
         self.data_y = data[border1:border2]
         self.data_stamp = data_stamp
 
+        if self.set_type == 0:
+            # 获取测试集的最大最小值
+            print("训练集的统计量如下")
+        if self.set_type == 1:
+            # 获取验证集的最大最小值
+            print("验证集的统计量如下")
+        if self.set_type == 2:
+            print("测试集的统计量如下")
+        # 创建一个与scaler.scale_形状相同的全零数组，并将pred_array[:, 0]赋值给该数组的第一个元素
+        data_expanded = np.zeros((1, self.scaler.scale_.shape[0]))
+        data_expanded[:, 0] = np.max(self.data_x)
+        self.max_input = self.inverse_transform(data_expanded)
+        data_expanded[:, 0] = np.min(self.data_x)
+        self.min_input = self.inverse_transform(data_expanded)
+        data_expanded[:, 0] = np.mean(self.data_x)
+        self.mean_input = self.inverse_transform(data_expanded)
+        data_expanded[:, 0] = np.max(self.data_y)
+        self.max_output = self.inverse_transform(data_expanded)
+        data_expanded[:, 0] = np.min(self.data_y)
+        self.min_output = self.inverse_transform(data_expanded)
+        data_expanded[:, 0] = np.mean(self.data_y)
+        self.mean_output = self.inverse_transform(data_expanded)
+        print("max_input: ", self.max_input[:, 0], "min_input: ", self.min_input[:, 0], "mean_input: ",
+              self.mean_input[:, 0])
+        print("max_output: ", self.max_output[:, 0], "min_output: ", self.min_output[:, 0], "mean_output: ",
+              self.mean_output[:, 0])
+
     def __getitem__(self, index):
+        # feat_id是feature_id，feat_id表示第几个变量, index表示第几个样本
+        # totol_len=39715
         feat_id = index // self.tot_len
         s_begin = index % self.tot_len
-        
+
         s_end = s_begin + self.seq_len
         r_begin = s_end - self.label_len
         r_end = r_begin + self.label_len + self.pred_len
-        seq_x = self.data_x[s_begin:s_end, feat_id:feat_id+1]
-        seq_y = self.data_y[r_begin:r_end, feat_id:feat_id+1]
+        # 第二个维度，表示取data_x的第几维数据
+        seq_x = self.data_x[s_begin:s_end, feat_id:feat_id + 1]
+        seq_y = self.data_y[r_begin:r_end, feat_id:feat_id + 1]
         seq_x_mark = self.data_stamp[s_begin:s_end]
         seq_y_mark = self.data_stamp[r_begin:r_end]
 
@@ -341,7 +391,7 @@ class Dataset_Custom(Dataset):
 
     def inverse_transform(self, data):
         return self.scaler.inverse_transform(data)
-    
+
 
 class Dataset_Pred(Dataset):
     def __init__(self, root_path, flag='pred', size=None,
@@ -455,14 +505,14 @@ class Dataset_TSF(Dataset):
                  features='S', data_path=None,
                  target='OT', scale=True, timeenc=0, freq='Daily',
                  percent=10, max_len=-1, train_all=False):
-        
+
         self.train_all = train_all
-        
+
         self.seq_len = size[0]
         self.pred_len = size[2]
         type_map = {'train': 0, 'val': 1, 'test': 2}
         self.set_type = type_map[flag]
-        
+
         self.percent = percent
         self.max_len = max_len
         if self.max_len == -1:
@@ -472,15 +522,17 @@ class Dataset_TSF(Dataset):
         self.data_path = data_path
         self.timeseries = self.__read_data__()
 
-
     def __read_data__(self):
-        df, frequency, forecast_horizon, contain_missing_values, contain_equal_length = convert_tsf_to_dataframe(os.path.join(self.root_path,
-                                                                                                                              self.data_path))
+        df, frequency, forecast_horizon, contain_missing_values, contain_equal_length = convert_tsf_to_dataframe(
+            os.path.join(self.root_path,
+                         self.data_path))
         self.freq = frequency
+
         def dropna(x):
             return x[~np.isnan(x)]
+
         timeseries = [dropna(ts).astype(np.float32) for ts in df.series_value]
-        
+
         self.tot_len = 0
         self.len_seq = []
         self.seq_id = []
@@ -490,23 +542,23 @@ class Dataset_TSF(Dataset):
             timeseries[i] = np.hstack([pad_zeros, timeseries[i]])
 
             _len = timeseries[i].shape[0]
-            train_len = _len-self.pred_len
+            train_len = _len - self.pred_len
             if self.train_all:
-                border1s = [0,          0,          train_len-self.seq_len]
-                border2s = [train_len,  train_len,  _len]
+                border1s = [0, 0, train_len - self.seq_len]
+                border2s = [train_len, train_len, _len]
             else:
-                border1s = [0,                          train_len - self.seq_len - self.pred_len, train_len-self.seq_len]
-                border2s = [train_len - self.pred_len,  train_len,                                _len]
+                border1s = [0, train_len - self.seq_len - self.pred_len, train_len - self.seq_len]
+                border2s = [train_len - self.pred_len, train_len, _len]
             border2s[0] = (border2s[0] - self.seq_len) * self.percent // 100 + self.seq_len
             # print("_len = {}".format(_len))
-            
+
             curr_len = border2s[self.set_type] - max(border1s[self.set_type], 0) - self.pred_len - self.seq_len + 1
             curr_len = max(0, curr_len)
-            
+
             self.len_seq.append(np.zeros(curr_len) + self.tot_len)
             self.seq_id.append(np.zeros(curr_len) + i)
             self.tot_len += curr_len
-            
+
         self.len_seq = np.hstack(self.len_seq)
         self.seq_id = np.hstack(self.seq_id)
 
@@ -520,11 +572,11 @@ class Dataset_TSF(Dataset):
         _len = self.timeseries[seq_id].shape[0]
         train_len = _len - self.pred_len
         if self.train_all:
-            border1s = [0,          0,          train_len-self.seq_len]
-            border2s = [train_len,  train_len,  _len]
+            border1s = [0, 0, train_len - self.seq_len]
+            border2s = [train_len, train_len, _len]
         else:
-            border1s = [0,                          train_len - self.seq_len - self.pred_len, train_len-self.seq_len]
-            border2s = [train_len - self.pred_len,  train_len,                                _len]
+            border1s = [0, train_len - self.seq_len - self.pred_len, train_len - self.seq_len]
+            border2s = [train_len - self.pred_len, train_len, _len]
         border2s[0] = (border2s[0] - self.seq_len) * self.percent // 100 + self.seq_len
 
         s_begin = index + border1s[self.set_type]

@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Define the path to the CSV file
-csv_file_path = './value.csv'
+csv_file_path = './origin2.csv'
 
 # Read the CSV file into a DataFrame
 data = pd.read_csv(csv_file_path)
@@ -10,4 +10,4 @@ data = pd.read_csv(csv_file_path)
 data['value'] = data['value'].round(2)
 
 # Write the modified DataFrame back to the same CSV file, overwriting it
-data.to_csv(csv_file_path, index=False)
+data.to_csv('./value2.csv', index=False)
