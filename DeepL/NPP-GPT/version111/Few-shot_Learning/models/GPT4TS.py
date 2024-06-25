@@ -36,7 +36,6 @@ class GPT4TS(nn.Module):
         
         if configs.freeze and configs.pretrain:
             for i, (name, param) in enumerate(self.gpt2.named_parameters()):
-                # 仅归一化层、位置嵌入层可训练，其他冻结。
                 if 'ln' in name or 'wpe' in name:
                     param.requires_grad = True
                 else:
@@ -52,12 +51,6 @@ class GPT4TS(nn.Module):
     def forward(self, x, itr):
         B, L, M = x.shape
 
-        # 前面data_loader里进行的是全局归一化。
-        # 这里是RevIN
-        # 用RevIN，最重要的是缓解在时间上的分布漂移问题
-        # RevIN即Reversible Instance Normalization，反向instance norm
-        # 即序列进来时，提取均值和方差，先进行z-score，输出前，再用保存下来的均值和方差还原原来的分布
-        # 时序预测这里多用instance norm而不用layer norm，因为据说instance norm对解决时序里的data shift问题效果很好
         means = x.mean(1, keepdim=True).detach()
         x = x - means
         stdev = torch.sqrt(torch.var(x, dim=1, keepdim=True, unbiased=False)+ 1e-5).detach() 
