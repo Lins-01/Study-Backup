@@ -8,7 +8,8 @@ from models.GRU import GRUModel
 from models.LSTM import LSTMModel
 from models.SCINet import SCINet
 from models.BERT import BERT4TS
-from models.RoBERTa import RoBERTa4TS
+from models.RoBERTaLoRA import RoBERTa4TS
+from models.GPTLora import GPTLora
 from tee import StdoutTee
 import pandas as pd
 
@@ -170,6 +171,8 @@ if __name__ == '__main__':
                 model = BERT4TS(args, device)
             elif args.model == 'RoBERTa4TS':
                 model = RoBERTa4TS(args, device)
+            elif args.model == 'GPTLora':
+                model = GPTLora(args, device)
             else:
                 model = GPT4TS(args, device)
             # mse, mae = test(model, test_data, test_loader, args, device, ii)
@@ -177,6 +180,16 @@ if __name__ == '__main__':
             # model.parameters() 返回一个迭代器，迭代器中每个元素是model每层权重的值
             params = model.parameters()
             model_optim = torch.optim.Adam(params, lr=args.learning_rate)
+
+            # 模型参数打印
+            print("Trainable parameters:")
+            for name, param in model.named_parameters():
+                if param.requires_grad:
+                    print(f"{name}: {param.shape}")
+            print("\nFrozen parameters:")
+            for name, param in model.named_parameters():
+                if not param.requires_grad:
+                    print(f"{name}: {param.shape}")
 
             # EarlyStopping里有保存模型torch.save
             early_stopping = EarlyStopping(patience=args.patience, verbose=True)
