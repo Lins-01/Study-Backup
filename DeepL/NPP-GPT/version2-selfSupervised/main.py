@@ -12,10 +12,10 @@ from models.RoBERTaLoRA import RoBERTa4TS
 from models.GPTLora import GPTLora
 
 
-
+from torch.utils.data import DataLoader, Dataset
 from tee import StdoutTee
 import pandas as pd
-
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 import torch
 import torch.nn as nn
@@ -94,6 +94,41 @@ parser.add_argument('--cos', type=int, default=0)
 
 args = parser.parse_args()
 
+
+class TimeSeriesDataset(Dataset):
+    def __init__(self, data, seq_len, mask_prob=0.15):
+        self.data = data
+        self.seq_len = seq_len
+        self.mask_prob = mask_prob
+        self.mask_token_id = -1  # Using -1 as the mask token ID for simplicity,归一化之后没有这么大的负数
+
+
+        # 添加归一化之后，loss降了很多，从几万降到几千，第二次就一百，第三次十位数，第四次就个位数。
+        # 归一化数据
+        self.scaler = StandardScaler()
+        self.data = self.scaler.fit_transform(data.values.reshape(-1, 1)).flatten()  # 将数据归一化为 均值0，方差1，即在[-1, 1]之间
+
+    def __len__(self):
+        return len(self.data) - self.seq_len
+
+    def __getitem__(self, idx):
+        seq = self.data[idx: idx + self.seq_len].copy().astype(np.float32)  # Ensure the sequence is a NumPy array
+
+
+        # 这里args.seq_len 要和 args.pre_len一致
+        labels = seq.copy()
+        mask = np.random.rand(self.seq_len) < self.mask_prob
+        seq[mask] = self.mask_token_id  # Mask some tokens
+
+        # # 将 Pandas Series 转换为 NumPy 数组，然后再转换为 PyTorch 张量
+        # seq = seq.to_numpy()
+        # labels = labels.to_numpy()
+
+        return torch.tensor(seq, dtype=torch.float32), torch.tensor(labels, dtype=torch.float32)
+
+
+
+
 SEASONALITY_MAP = {
     "minutely": 1440,
     "10_minutes": 144,
@@ -139,21 +174,22 @@ if __name__ == '__main__':
             if args.freq == 0:
                 args.freq = 'h'
 
-            # 切分数据集，准备好三个数据集
-            # data_provider里面会打印 train/val/test 个数
-            train_data, train_loader = data_provider(args, 'train')
-            # vali_data, vali_loader = data_provider(args, 'val')
-            test_data, test_loader = data_provider(args, 'test')
+            # Prepare dataset and dataloader
+            data = pd.read_csv(os.path.join(args.root_path,
+                                          args.data_path))
+            data = data[args.target]
+            num_train = int(len(data) * 0.8)
+            # 测试集不给看。不泄露。
+            data = data[:num_train]
+            dataset = TimeSeriesDataset(data, seq_len=args.seq_len, mask_prob=0.15)
+            dataloader = DataLoader(dataset, batch_size=args.batch_size, shuffle=True)
 
-            # freq传入0后，这里不用管
-            if args.freq != 'h':
-                args.freq = SEASONALITY_MAP[test_data.freq]
-                print("freq = {}".format(args.freq))
+
 
             device = torch.device('cuda:0')
 
             time_now = time.time()
-            train_steps = len(train_loader)
+
 
             if args.model == 'PatchTST':
                 model = PatchTST(args, device)
@@ -181,22 +217,26 @@ if __name__ == '__main__':
             # mse, mae = test(model, test_data, test_loader, args, device, ii)
 
             # 尝试加载已保存的模型权重
-            path_model = r"D:\Changling\Project\NPP-GPT-version2-selfSpuervised\checkpoints\newmask_SSL_gptlora_sl1024_ll128_pl1024_dm768_nh4_el3_gl6_df768_ebtimeF_itr0_tgvol_170101010.tempf_epoch10_dataset_period_loop1_resampled_file222.csv"
-            old_model_path = os.path.join(path_model, 'checkpoint.pth')
-            if os.path.exists(old_model_path):
-                model.load_state_dict(torch.load(old_model_path))
-                print(f"Loaded model weights from {old_model_path}")
+            best_model_path = os.path.join(path, 'checkpoint.pth')
+            if os.path.exists(best_model_path):
+                model.load_state_dict(torch.load(best_model_path))
+                print(f"Loaded model weights from {best_model_path}")
             else:
                 print("加载的模型路径错误")
 
             # 打印加载后的模型权重,确认生效的权重。
             print("Loaded model weights (first few layers):================================")
-            for name, param in list(model.named_parameters())[:5]:
-                print(f"{name}: {param.data[:2]}")
+            for name, param in list(model.named_parameters())[:6]:
+                if "wte"  in name:
+                    print(f"{name}: {param.data[:50000]}")
+
+                # else:
+                #     print(f"{name}: {param.data[:2]}")
 
             # model.parameters() 返回一个迭代器，迭代器中每个元素是model每层权重的值
             params = model.parameters()
-            model_optim = torch.optim.Adam(params, lr=args.learning_rate)
+            optimizer = optim.Adam(model.parameters(), lr=args.learning_rate)
+            scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.9, patience=1,threshold=5e-3, threshold_mode='abs',verbose=True, min_lr=1e-6)
 
 
             # 模型参数打印
@@ -224,30 +264,26 @@ if __name__ == '__main__':
 
                 criterion = SMAPE()
 
-            # 动态学习率的变化设定
-            scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(model_optim, T_max=args.tmax, eta_min=1e-8)
-            # 当传入的vali_loss不改变时，才会调整学习率
-            # scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(model_optim, mode='min', factor=0.2, patience=2, verbose=True, min_lr=1e-6)
+            train_steps = len(dataloader)
+            time_now = time.time()
+            # Train the model
+            model.train()
             for epoch in range(args.train_epochs):
-
                 iter_count = 0
                 train_loss = []
                 epoch_time = time.time()
-                for i, (batch_x, batch_y, batch_x_mark, batch_y_mark) in tqdm(enumerate(train_loader)):
-
+                for i,(inputs, labels) in tqdm(enumerate(dataloader)):
                     iter_count += 1
-                    model_optim.zero_grad()
-                    batch_x = batch_x.float().to(device)
-
-                    batch_y = batch_y.float().to(device)
-                    batch_x_mark = batch_x_mark.float().to(device)
-                    batch_y_mark = batch_y_mark.float().to(device)
-
-                    outputs = model(batch_x, ii)
-
-                    outputs = outputs[:, -args.pred_len:, :]
-                    batch_y = batch_y[:, -args.pred_len:, :].to(device)
-                    loss = criterion(outputs, batch_y)
+                    inputs = inputs.to(device)
+                    labels = labels.to(device)
+                    label_test = labels[1,:]
+                    optimizer.zero_grad()
+                    # 将inputs添加一个维度
+                    inputs = inputs.unsqueeze(2)
+                    outputs = model(inputs, 0)
+                    # 将outputs减少一个维度
+                    outputs = outputs.squeeze(2)
+                    loss = criterion(outputs, labels)
                     train_loss.append(loss.item())
 
                     if (i + 1) % 1000 == 0:
@@ -257,127 +293,47 @@ if __name__ == '__main__':
                         print('\tspeed: {:.4f}s/iter; left time: {:.4f}s'.format(speed, left_time))
                         iter_count = 0
                         time_now = time.time()
+
                     loss.backward()
-                    model_optim.step()
+                    optimizer.step()
 
                 print("Epoch: {} cost time: {}".format(epoch + 1, time.time() - epoch_time))
-
                 train_loss = np.average(train_loss)
-                # vali_loss = vali(model, vali_data, vali_loader, criterion, args, device, ii)
-                # test_loss = vali(model, test_data, test_loader, criterion, args, device, ii)
-                # print("Epoch: {0}, Steps: {1} | Train Loss: {2:.7f} Vali Loss: {3:.7f}, Test Loss: {4:.7f}".format(
-                #     epoch + 1, train_steps, train_loss, vali_loss, test_loss))
                 print("Epoch: {0}, Steps: {1} | Train Loss: {2:.7f} ".format(
                     epoch + 1, train_steps, train_loss))
-
-                if args.cos:
-                    scheduler.step()
-                    # scheduler.step(train_loss)
-                    print("lr = {:.10f}".format(model_optim.param_groups[0]['lr']))
-                else:
-                    adjust_learning_rate(model_optim, epoch + 1, args)
+                scheduler.step(train_loss)
+                print("lr = {:.10f}".format(optimizer.param_groups[0]['lr']))
 
 
-
-
-                # 每次都过下测试集，看看mse哪次最低，是不是过拟合了。
-                mse, mae, rmse, mape, min_pred, min_true, min_rmse, min_input = test(model, test_data, test_loader,
-                                                                                     args,
-                                                                                     device, ii)
-                # 将数据转换为 NumPy 数组
-                min_pred_array = np.array(min_pred)
-                min_true_array = np.array(min_true)
-                min_input_array = np.array(min_input)
-
-                # 将数据转换为 Pandas DataFrame
-                min_pred_df = pd.DataFrame(min_pred_array, columns=['min_pred'])
-                min_true_df = pd.DataFrame(min_true_array, columns=['min_true'])
-                min_input_df = pd.DataFrame(min_input_array, columns=['min_input'])
-
-                # 将 DataFrame 保存为 CSV 文件
-                min_pred_name = path + '/' + str(epoch)+'min_pred.csv'
-                min_true_name = path + '/' + str(epoch)+'min_true.csv'
-                min_input_name = path + '/' + str(epoch)+'min_input.csv'
-
-                min_true_df.to_csv(min_true_name, index=False)
-                min_pred_df.to_csv(min_pred_name, index=False)
-                min_input_df.to_csv(min_input_name, index=False)
-
-                plt.figure(figsize=(12, 6))
-                label1 = args.model + '_pred_epoch=' + str(epoch)+ '_min_rmse=' +str(min_rmse)
-                plt.plot(min_pred, label=label1)
-                plt.plot(min_true, label=args.target)
-                plt.legend()  # 显示图例,即label
-                res_name = './res/' + setting +str(epoch)+ '.png'
-                plt.savefig(res_name)
-                print('epoch={}  min_rmse:{:.4f}'.format(epoch,min_rmse))
-
-                # 调用EarlyStopping中的__call__
-                # if train_loss < 0.01:
-                #     break
-                early_stopping(train_loss, model, path)
-                if early_stopping.early_stop:
-                    print("Early stopping")
-                    break
-
-            # 加载最好的模型
             best_model_path = path + '/' + 'checkpoint.pth'
-            model.load_state_dict(torch.load(best_model_path))
+            torch.save(model.state_dict(), best_model_path)
 
-            mse, mae, rmse, mape, min_pred, min_true, min_rmse, min_input = test(model, test_data, test_loader, args,
-                                                                                 device, ii)
+            # 画出label和预测值的图
 
+            # Visualize the outputs and labels
+            model.eval()
+            with torch.no_grad():
+                val_inputs, val_labels = next(iter(dataloader))
+                val_inputs = val_inputs.to(device)
+                val_labels = val_labels.to(device)
+                val_inputs = val_inputs.unsqueeze(2)
+                val_outputs = model(val_inputs, 0)
+                val_outputs = val_outputs.squeeze(2)
 
-            print("min_pred-------------------------------------min_true")
-            # 将数据转换为 NumPy 数组
-            min_pred_array = np.array(min_pred)
-            min_true_array = np.array(min_true)
-            min_input_array = np.array(min_input)
+            # Detach and move to CPU for plotting
+            val_inputs = val_inputs.detach().cpu().numpy()
+            val_labels = val_labels.detach().cpu().numpy()
+            val_outputs = val_outputs.detach().cpu().numpy()
 
-            # 将数据转换为 Pandas DataFrame
-            min_pred_df = pd.DataFrame(min_pred_array, columns=['min_pred'])
-            min_true_df = pd.DataFrame(min_true_array, columns=['min_true'])
-            min_input_df = pd.DataFrame(min_input_array, columns=['min_input'])
+            idx = 0
+            for i in range(10):
+                idx = i * 25
+                plt.figure(figsize=(12, 6))
+                plt.plot(val_outputs[idx, :], label='Output')
+                plt.plot(val_labels[idx, :], label='Label')
+                plt.plot(val_inputs[idx, :, :], label='Input')
+                plt.legend()
+                res_name = './res/' + setting +str(idx)+ '.png'
+                plt.show()
+                plt.savefig(res_name)
 
-            # 将 DataFrame 保存为 CSV 文件
-            min_pred_name = path + '/' + 'min_pred.csv'
-            min_true_name = path + '/' + 'min_true.csv'
-            min_input_name = path + '/' + 'min_input.csv'
-
-            min_true_df.to_csv(min_true_name, index=False)
-            min_pred_df.to_csv(min_pred_name, index=False)
-            min_input_df.to_csv(min_input_name, index=False)
-
-            print("Data saved to checkpoint's min_pred.csv and min_true.csv and min_input.csv")
-
-            print("------------------------------------")
-            rmses.append(rmse)
-            mapes.append(mape)
-            mses.append(mse)
-            maes.append(mae)
-
-            rmses = np.array(rmses)
-            mapes = np.array(mapes)
-            mses = np.array(mses)
-            maes = np.array(maes)
-            # 多次迭代的平均值
-            print("多次迭代才有意义的平均值!")
-            print("rmse_mean = {:.4f}, rmse_std = {:.4f}".format(np.mean(rmses), np.std(rmses)))
-            print("mape_mean = {:.4f}, mape_std = {:.4f}".format(np.mean(mapes), np.std(mapes)))
-            print("mse_mean = {:.4f}, mse_std = {:.4f}".format(np.mean(mses), np.std(mses)))
-            print("mae_mean = {:.4f}, mae_std = {:.4f}".format(np.mean(maes), np.std(maes)))
-            plt.figure(figsize=(12, 6))
-            label1 = args.model + '_pred' + '_min_rmse=' + str(min_rmse)
-            plt.plot(min_pred, label=label1)
-            plt.plot(min_true, label=args.target)
-            plt.legend()  # 显示图例,即label
-            res_name = './res/' + setting + '.png'
-            plt.savefig(res_name)
-            print('min_rmse:{:.4f}'.format(min_rmse))
-            print("循环里面，最后一次是总的平均值！")
-
-    # mses = np.array(mses)
-    # maes = np.array(maes)
-    # print("mse_mean = {:.4f}, mse_std = {:.4f}".format(np.mean(mses), np.std(mses)))
-    # print("mae_mean = {:.4f}, mae_std = {:.4f}".format(np.mean(maes), np.std(maes)))
-    print("运行到了这里！")

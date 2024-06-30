@@ -311,7 +311,6 @@ class Dataset_Custom(Dataset):
             df_data = df_raw[[self.target]]
 
         if self.scale:
-            # 用train_data的均值和方差来归一化。
             train_data = df_data[border1s[0]:border2s[0]]
             self.scaler.fit(train_data.values)
 
@@ -339,26 +338,8 @@ class Dataset_Custom(Dataset):
             data_stamp = time_features(pd.to_datetime(df_stamp['date'].values), freq=self.freq)
             data_stamp = data_stamp.transpose(1, 0)
 
-        # 当test_data, test_loader = data_provider(args, 'test')时，这里维度是(3020,17)。测试集占比0.2长度为3020
-        # 为什么测试集也要用别的变量？只用target不就可以了？测试整个通道独立的性能？但我最重要用来检验的是对于target的预测准确性呀？
-        # 修改前
-        # self.data_x = data[border1:border2]
-        # self.data_y = data[border1:border2]
-
-        # 修改后
-        # 改成test只有target
-        if self.set_type == 2:
-            # 这里data已经是pandas数组了，索引变成数字
-            # 只取target列
-            # data = data[:,-1] 直接这么用维度是（9981,)，在__len__方法中会错误。
-            data = np.expand_dims(data[:, -1], axis=-1) # 添加一个维度，变成(9981,1)
-            self.data_x = data[border1:border2]
-            self.data_y = data[border1:border2]
-            print("======================if self.set_type == 2:=========")
-        else:
-            self.data_x = data[border1:border2]
-            self.data_y = data[border1:border2]
-
+        self.data_x = data[border1:border2]
+        self.data_y = data[border1:border2]
         self.data_stamp = data_stamp
 
         if self.set_type == 0:
@@ -388,7 +369,6 @@ class Dataset_Custom(Dataset):
         print("max_output: ", self.max_output[:, 0], "min_output: ", self.min_output[:, 0], "mean_output: ",
               self.mean_output[:, 0])
 
-    # getitem的index一次会有一个batch大小的值。batch=256就有256个索引。
     def __getitem__(self, index):
         # feat_id是feature_id，feat_id表示第几个变量, index表示第几个样本
         # totol_len=39715
@@ -401,14 +381,12 @@ class Dataset_Custom(Dataset):
         # 第二个维度，表示取data_x的第几维数据
         seq_x = self.data_x[s_begin:s_end, feat_id:feat_id + 1]
         seq_y = self.data_y[r_begin:r_end, feat_id:feat_id + 1]
-        # 日期的mark在main里面输入模型的时候也没用到，可以无视。
         seq_x_mark = self.data_stamp[s_begin:s_end]
         seq_y_mark = self.data_stamp[r_begin:r_end]
 
         return seq_x, seq_y, seq_x_mark, seq_y_mark
 
     def __len__(self):
-
         return (len(self.data_x) - self.seq_len - self.pred_len + 1) * self.enc_in
 
     def inverse_transform(self, data):
@@ -510,7 +488,6 @@ class Dataset_Pred(Dataset):
             seq_y = self.data_x[r_begin:r_begin + self.label_len]
         else:
             seq_y = self.data_y[r_begin:r_begin + self.label_len]
-
         seq_x_mark = self.data_stamp[s_begin:s_end]
         seq_y_mark = self.data_stamp[r_begin:r_end]
 

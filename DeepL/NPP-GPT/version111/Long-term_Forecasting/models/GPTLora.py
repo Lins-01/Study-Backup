@@ -16,8 +16,10 @@ class LoRALayer(nn.Module):
         super(LoRALayer, self).__init__()
         self.original_layer = original_layer
         self.rank = rank
-        self.lora_A = nn.Linear(original_layer.in_features, rank, bias=False)
-        self.lora_B = nn.Linear(rank, original_layer.out_features, bias=False)
+        self.in_features = original_layer.weight.size(0)
+        self.out_features = original_layer.weight.size(1)
+        self.lora_A = nn.Linear(self.in_features, rank, bias=False)
+        self.lora_B = nn.Linear(rank, self.out_features, bias=False)
         self.scale = 0.01
 
         # Initialize the LoRA parameters
@@ -49,12 +51,11 @@ class GPTLora(nn.Module):
                 print("------------------no pretrain------------------")
                 self.gpt2 = GPT2Model(GPT2Config())
             self.gpt2.h = self.gpt2.h[:configs.gpt_layers]
-            print("gpt2 = {}".format(self.gpt2))
+
 
         # Apply LoRA to each attention layer in GPT-2
         for i in range(len(self.gpt2.h)):
             self.gpt2.h[i].attn.c_attn = LoRALayer(self.gpt2.h[i].attn.c_attn)
-            # If you want to apply LoRA to other parts, you can do similar replacements here
 
         self.in_layer = nn.Linear(configs.patch_size, configs.d_model)
         self.out_layer = nn.Linear(configs.d_model * self.patch_num, configs.pred_len)
@@ -71,6 +72,8 @@ class GPTLora(nn.Module):
             layer.train()
 
         self.cnt = 0
+
+        print("gpt2 = {}".format(self.gpt2))
 
     def forward(self, x, itr):
         B, L, M = x.shape

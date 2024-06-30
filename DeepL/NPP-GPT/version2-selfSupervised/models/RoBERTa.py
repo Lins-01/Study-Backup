@@ -1,5 +1,3 @@
-import math
-
 import numpy as np
 import torch
 import torch.nn as nn
@@ -9,22 +7,6 @@ from transformers import RobertaModel, RobertaConfig
 from einops import rearrange
 from embed import DataEmbedding, DataEmbedding_wo_time
 
-class LoRALayer(nn.Module):
-    def __init__(self, original_layer, rank=4):
-        super(LoRALayer, self).__init__()
-        self.original_layer = original_layer
-        self.rank = rank
-        self.lora_A = nn.Linear(original_layer.in_features, rank, bias=False)
-        self.lora_B = nn.Linear(rank, original_layer.out_features, bias=False)
-        self.scale = 0.01
-
-        # Initialize the LoRA parameters
-        # LoRA论文中，A矩阵初始化为随即正态分布，B矩阵初始化为零
-        nn.init.kaiming_uniform_(self.lora_A.weight, a=math.sqrt(5))
-        nn.init.zeros_(self.lora_B.weight)
-
-    def forward(self, x):
-        return self.original_layer(x) + self.scale * self.lora_B(self.lora_A(x))
 
 class RoBERTa4TS(nn.Module):
 
@@ -46,21 +28,15 @@ class RoBERTa4TS(nn.Module):
             else:
                 print("------------------no pretrain------------------")
                 self.roberta = RobertaModel(RobertaConfig())
-            self.roberta.encoder.layer = self.roberta.encoder.layer[:configs.roberta_layers]
-
-
-        # Apply LoRA to each encoder layer in RoBERTa
-        for i in range(len(self.roberta.encoder.layer)):
-            self.roberta.encoder.layer[i].attention.self.query = LoRALayer(self.roberta.encoder.layer[i].attention.self.query)
-            # self.roberta.encoder.layer[i].attention.self.key = LoRALayer(self.roberta.encoder.layer[i].attention.self.key)
-            self.roberta.encoder.layer[i].attention.self.value = LoRALayer(self.roberta.encoder.layer[i].attention.self.value)
+            self.roberta.encoder.layer = self.roberta.encoder.layer[:configs.bert_layers]
+            print("roberta = {}".format(self.roberta))
 
         self.in_layer = nn.Linear(configs.patch_size, configs.d_model)
         self.out_layer = nn.Linear(configs.d_model * self.patch_num, configs.pred_len)
 
         if configs.freeze and configs.pretrain:
             for i, (name, param) in enumerate(self.roberta.named_parameters()):
-                if 'LayerNorm' in name or 'position_embeddings' in name or 'lora' in name:
+                if 'LayerNorm' in name or 'position_embeddings' in name:
                     param.requires_grad = True
                 else:
                     param.requires_grad = False
@@ -70,8 +46,6 @@ class RoBERTa4TS(nn.Module):
             layer.train()
 
         self.cnt = 0
-
-        print("roberta = {}".format(self.roberta))
 
     def forward(self, x, itr):
         B, L, M = x.shape

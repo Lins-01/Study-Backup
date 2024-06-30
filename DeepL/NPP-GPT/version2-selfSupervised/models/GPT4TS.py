@@ -32,6 +32,7 @@ class GPT4TS(nn.Module):
             print("gpt2 = {}".format(self.gpt2))
         
         self.in_layer = nn.Linear(configs.patch_size, configs.d_model)
+        # 自监督时，这里保持和输入序列长度一致。
         self.out_layer = nn.Linear(configs.d_model * self.patch_num, configs.pred_len)
         
         if configs.freeze and configs.pretrain:
@@ -51,8 +52,6 @@ class GPT4TS(nn.Module):
         print("Pretrained GPT-2 model weights (first few layers):====================")
         for name, param in list(self.gpt2.named_parameters())[:5]:
             print(f"{name}: {param.data[:2]}")
-
-
     def forward(self, x, itr):
         B, L, M = x.shape
 
