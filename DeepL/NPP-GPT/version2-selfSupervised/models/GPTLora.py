@@ -62,7 +62,8 @@ class GPTLora(nn.Module):
 
         if configs.freeze and configs.pretrain:
             for i, (name, param) in enumerate(self.gpt2.named_parameters()):
-                if 'ln' in name or 'wpe' in name or 'lora' in name or 'wte' in name or 'mlp' in name:
+                # if 'ln' in name or 'wpe' in name or 'lora' in name or 'wte' in name or 'mlp' in name:
+                if 'ln' in name or 'wpe' in name or 'lora' in name or 'wte' in name:
                     param.requires_grad = True
                 else:
                     param.requires_grad = False
@@ -74,15 +75,6 @@ class GPTLora(nn.Module):
         self.cnt = 0
 
         print("gpt2 = {}".format(self.gpt2))
-        # 打印预训练模型的一些权重
-        print("Pretrained GPT-2 model weights (first few layers):====================")
-        for name, param in list(self.gpt2.named_parameters())[:6]:
-            if "wte" in name:
-                print(f"{name}: {param.data[:50000]}")
-
-            # else:
-            #     print(f"{name}: {param.data[:2]}")
-
 
     def forward(self, x, itr):
         B, L, M = x.shape

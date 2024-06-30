@@ -48,10 +48,7 @@ class GPT4TS(nn.Module):
         
         self.cnt = 0
 
-        # 打印预训练模型的一些权重
-        print("Pretrained GPT-2 model weights (first few layers):====================")
-        for name, param in list(self.gpt2.named_parameters())[:5]:
-            print(f"{name}: {param.data[:2]}")
+
     def forward(self, x, itr):
         B, L, M = x.shape
 

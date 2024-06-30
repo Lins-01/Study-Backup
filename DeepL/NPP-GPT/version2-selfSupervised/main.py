@@ -100,6 +100,7 @@ class TimeSeriesDataset(Dataset):
         self.data = data
         self.seq_len = seq_len
         self.mask_prob = mask_prob
+        self.mask_len = int(seq_len * mask_prob)
         self.mask_token_id = -1  # Using -1 as the mask token ID for simplicity,归一化之后没有这么大的负数
 
 
@@ -111,18 +112,32 @@ class TimeSeriesDataset(Dataset):
     def __len__(self):
         return len(self.data) - self.seq_len
 
+    # def __getitem__(self, idx):
+    #     seq = self.data[idx: idx + self.seq_len].copy().astype(np.float32)  # Ensure the sequence is a NumPy array
+    #
+    #
+    #     # 这里args.seq_len 要和 args.pre_len一致
+    #     labels = seq.copy()
+    #     mask = np.random.rand(self.seq_len) < self.mask_prob
+    #     seq[mask] = self.mask_token_id  # Mask some tokens
+    #
+    #     # # 将 Pandas Series 转换为 NumPy 数组，然后再转换为 PyTorch 张量
+    #     # seq = seq.to_numpy()
+    #     # labels = labels.to_numpy()
+    #
+    #     return torch.tensor(seq, dtype=torch.float32), torch.tensor(labels, dtype=torch.float32)
+
     def __getitem__(self, idx):
         seq = self.data[idx: idx + self.seq_len].copy().astype(np.float32)  # Ensure the sequence is a NumPy array
 
-
-        # 这里args.seq_len 要和 args.pre_len一致
         labels = seq.copy()
-        mask = np.random.rand(self.seq_len) < self.mask_prob
-        seq[mask] = self.mask_token_id  # Mask some tokens
 
-        # # 将 Pandas Series 转换为 NumPy 数组，然后再转换为 PyTorch 张量
-        # seq = seq.to_numpy()
-        # labels = labels.to_numpy()
+        # 随机生成掩码的起始位置和长度
+        start = int(np.random.randint(0, self.seq_len - self.mask_len + 1))
+        end = int(start + self.mask_len)
+
+        # 掩码序列中[start, end)的部分
+        seq[start:end] = self.mask_token_id
 
         return torch.tensor(seq, dtype=torch.float32), torch.tensor(labels, dtype=torch.float32)
 
@@ -216,22 +231,18 @@ if __name__ == '__main__':
                 model = GPT4TS(args, device)
             # mse, mae = test(model, test_data, test_loader, args, device, ii)
 
-            # 尝试加载已保存的模型权重
-            best_model_path = os.path.join(path, 'checkpoint.pth')
-            if os.path.exists(best_model_path):
-                model.load_state_dict(torch.load(best_model_path))
-                print(f"Loaded model weights from {best_model_path}")
-            else:
-                print("加载的模型路径错误")
+            # # 尝试加载已保存的模型权重
+            # best_model_path = os.path.join(path, 'checkpoint.pth')
+            # if os.path.exists(best_model_path):
+            #     model.load_state_dict(torch.load(best_model_path))
+            #     print(f"Loaded model weights from {best_model_path}")
+            # else:
+            #     print("加载的模型路径错误")
 
             # 打印加载后的模型权重,确认生效的权重。
             print("Loaded model weights (first few layers):================================")
-            for name, param in list(model.named_parameters())[:6]:
-                if "wte"  in name:
-                    print(f"{name}: {param.data[:50000]}")
-
-                # else:
-                #     print(f"{name}: {param.data[:2]}")
+            for name, param in list(model.named_parameters())[:5]:
+                print(f"{name}: {param.data[:2]}")
 
             # model.parameters() 返回一个迭代器，迭代器中每个元素是model每层权重的值
             params = model.parameters()

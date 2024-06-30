@@ -23,7 +23,7 @@ class RoBERTa4TS(nn.Module):
 
         if configs.is_roberta:
             if configs.pretrain:
-                self.roberta = RobertaModel.from_pretrained('roberta-base', output_attentions=True,
+                self.roberta = RobertaModel.from_pretrained('roberta-large', output_attentions=True,
                                                             output_hidden_states=True)  # 加载预训练的RoBERTa模型
             else:
                 print("------------------no pretrain------------------")
